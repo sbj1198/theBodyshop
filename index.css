@@ -280,3 +280,52 @@ img {vertical-align: middle;}
     width: 450px;
 }
 
+
+/* srisha css code for footer section start hare */
+#textMainDiv{
+  width: 96%;
+  height: 500px;
+  margin:auto;
+}
+#textMainDiv>h1{
+  font-size:33px;
+  font-weight: bolder;
+    transform: scaleX(0.9);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+  /* font-size: 20px; */
+  text-align: center;
+  font-weight: 600;
+  font-size:20px;
+}
+#imgTxtDiv{
+  display:grid;
+  grid-template-columns: auto auto ;
+  grid-gap: 30px;
+}
+p{
+ font-size: 16px;
+  text-align: center;
+  line-height: 23px; 
+  font-weight: lighter;
+  padding-left: 25px ;
+  padding-right: 30px;
+}
+#imgTxtDiv~ #btnDiv{
+width: 200px;
+padding-top: 40px;
+padding-bottom: 50px;
+margin: auto; 
+}
+#btnDiv>button{
+  padding: 15px;
+  height: 50px;
+  font-weight: bold;
+  background-color: white;
+  font-size: medium;
+}
+#btnDiv>button:hover{
+  background-color: black;
+  color: white;
+}
