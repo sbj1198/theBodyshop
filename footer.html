@@ -65,7 +65,7 @@
     }
     #inftxt{
         color:red;
-        font-size:16px;
+        font-size:14px;
     }
     #hrfdiv{
         margin-top:40px;
@@ -86,7 +86,8 @@
         font-weight:550;
     }
     h4{
-        font-family: 'Inter', sans-serif
+        font-family: 'Inter', sans-serif;
+        font-weight: 750;
     }
     #col2{
         margin-left:36px;
@@ -99,6 +100,26 @@
     }
     li:hover{
         text-decoration:underline;
+    }
+    .info{
+        display:inline-block;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight:600;
+    }
+    select{
+        font-family: 'Inter', sans-serif;
+        font-weight:500;
+    }
+    .linfo{
+        font-family: 'Inter', sans-serif;
+        display:inline-block;
+        font-size: 9px;
+        font-weight:400;
+    }
+    #drpdiv{
+        color:red;
+        font-size:12px;
     }
 </style>
 <body>
@@ -128,7 +149,7 @@
                        <div id="inftxt"></div>
                    </div>
                    <div style="width:8%; text-align:center;line-height:50px;">
-                    <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-chevron-right"></i>
                    </div>
                </div>
            </div>
@@ -137,41 +158,98 @@
 
        <div id=hrfdiv>
             <div >
-                <h4 style="margin-left: 38px;">Love Your Body Club</h4>
+                <h4 style="margin-left: 38px;">LOVE YOUR BODY CLUB</h4>
                 <ul id="ul1">
-                    <li><a class="a1">FAQs</a></li>
-                    <li><a class="a2">Loyalty Club</a></li>
+                    <li>FAQs</li>
+                    <li>Loyalty Club</li>
                 </ul>
             </div>
             <div id="col2">
                 <h4 style="margin-left: 38px;">ABOUT US</h4>
                 <ul id="ul2">
-                    <li><a  class="a1">About Us</a></li>
-                    <li><a>Affiliates</a></li>
-                    <li><a>Careers</a></li>
-                    <li><a>Dame Anita Roddick</a></li>
-                    <li><a>Contact Us</a></li>
+                    <li>About Us</li>
+                    <li>Affiliates</li>
+                    <li>Careers</li>
+                    <li>Dame Anita Roddick</li>
+                    <li>Contact Us</li>
                 </ul>
             </div>
             <div id="col3">
                 <h4 style="margin-left: 38px;">USING THE WEBSITE</h4>
                 <ul id="ul3">
-                    <li><a>Terms & Conditions</a></li>
-                    <li><a>Privacy Policy</a></li>
-                    <li><a>Policy Documentation</a></li>
-                    <li><a>Packaging & Delivery FAQ's</a></li>
-                    <li><a>Sitemap</a></li>
-                    <li><a>FAQ Services</a></li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Policy Documentation</li>
+                    <li>Packaging & Delivery FAQ's</li>
+                    <li>Sitemap</li>
+                    <li>FAQ Services</li>
                 </ul>
             </div>
             <div id="col4">
-                <h4 style="margin-left: 38px;">Commitment</h4>
+                <h4 style="margin-left: 38px;">COMMITMENT</h4>
                 <ul id="ul4">
-                    <li><a>Community Trade</href></a></li>
-                    <li><a>Ethical Trade</a></li>
-                    <li><a>Campaigns</a></li>
-                    <li><a>Our Commitment</a></li>
+                    <li>Community Trade</li>
+                    <li>Ethical Trade</li>
+                    <li>Campaigns</li>
+                    <li>Our Commitment</li>
                 </ul>
+            </div>
+        </div>
+        <!-- copyright 1 -->
+        <div class=info>
+            <p>
+                © 2021  THE BODY SHOP INTERNATIONAL LIMITED
+            </p>
+        </div>
+        <div class=info style="margin-left:630px;">
+            <select onchange="redirect()">
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Belgium">Belgium/Belgique</option>
+                <option value="Canada">Canada</option>
+                <option value="Danmark/Denmark">Danmark/Denmark</option>
+                <option value="Deutschland/Germany">Deutschland/Germany</option>
+                <option value="España/Spain">España/Spain</option>
+                <option value="Estonia">Estonia</option>
+                <option value="France">France</option>
+                <option value="Global">Global</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Italy">Italy</option>
+                <option value="Japan">Japan</option>
+                <option value="Korea">Korea</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Norway">Norway</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russia</option>
+                <option value="Suisse/Switzerland">Suisse/Switzerland</option>
+                <option value="Singapore">Singapore</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Suomi/Finland">Suomi/Finland</option>
+                <option value="Sverige/Sweden">Sverige/Sweden</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Türkiye/Turkey">Türkiye/Turkey</option>
+                <option value="UK">UK</option>
+                <option value="USA">USA</option>
+                <option value="Vietnam">Vietnam</option>
+            </select>
+            <div id="drpdiv"></div>
+        </div>
+        <!-- privacy policy -->
+        <div  style="margin-top:20px;">
+            <div class=linfo>
+                <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.</p>
+                <p>REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
+            </div>
+            <div class=linfo style="float:right; width:25%;">
+                <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png" width="100%">
             </div>
         </div>
     </div>
@@ -267,4 +345,13 @@
     }
     document.querySelector("#inftxt").textContent=checker;
   }
+
+//   select function
+   function redirect(){
+       var s=document.querySelector("select").value;
+        console.log(s);
+        if(s!="India"){
+            document.querySelector("#drpdiv").textContent="Currently not available"
+        }
+    }
 </script>
