@@ -274,8 +274,9 @@ img {vertical-align: middle;}
 /* Grid card CSS */
 .grid-card{
   /* border: solid red 1px; */
-    display:flex;
+    display:grid;
     flex-wrap: wrap;
+    grid-template-columns: auto auto auto;
     justify-content: space-between;
     width: 100%;
     float: left;
