@@ -269,22 +269,23 @@ img {vertical-align: middle;}
 
 /* Grid card CSS */
 .grid-card{
+  /* border: solid red 1px; */
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
+    justify-content: space-between;
     width: 100%;
     float: left;
 } 
 .grid-card>a>img{
-    width: 450px;
+    width: 500px;
+    margin-bottom: 40px;
 }
 
 
 /* srisha css code for footer section start hare */
 #textMainDiv{
-  width: 96%;
-  height: 500px;
+  width:100%;
+  /* height: 500px; */
   margin:auto;
 }
 #textMainDiv>h1{
@@ -301,16 +302,16 @@ h1{
 }
 #imgTxtDiv{
   display:grid;
-  grid-template-columns: auto auto ;
+  grid-template-columns: 50% 50% ;
   grid-gap: 30px;
 }
 p{
- font-size: 16px;
+ font-size: 18px;
   text-align: center;
-  line-height: 23px; 
+  line-height: 32px; 
   font-weight: lighter;
   padding-left: 25px ;
-  padding-right: 30px;
+  padding-right: 35px;
 }
 #imgTxtDiv~ #btnDiv{
 width: 200px;
@@ -328,4 +329,8 @@ margin: auto;
 #btnDiv>button:hover{
   background-color: black;
   color: white;
+}
+#txtDiv{
+  margin-left: 40px;
+  
 }
