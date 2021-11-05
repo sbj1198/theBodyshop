@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/64d8096832.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    #fcont{
+        width:85%;
+        margin:auto;
+    }
+    #medcont{    
+        width:99%;
+        margin:auto;
+        background-color:#f3f3f3;
+        padding-top:16px;
+        height:70px;
+        margin-top:50px;
+    }
+    #medcont>div{
+        width:74%;
+        margin:auto;
+        height:80%;
+    }
+    .bdiv{
+        display:inline-block;
+        height:100%;
+        vertical-align:top;
+    }
+    #sinp{
+        background-color:#f3f3f3;
+        width:99%;
+        height:90%;
+    }
+    #tdiv{
+        margin-left: 70px;
+        margin-top:10px;
+    }
+    #fbdiv{
+        margin-left: 20px;
+        margin-top:10px;
+    }
+    #ytdiv{
+        margin-left: 20px;
+        margin-top:10px;
+    }
+    #idiv{
+        margin-left: 20px;
+        margin-top:10px;
+    }
+    #inpdiv{
+        border:2px solid black;
+        margin-left:65px;
+        width:340px;
+        height:80%;
+    }
+    #inpdiv>div{
+        display: inline-block;
+        font-size:30px;
+        height:100%;
+        vertical-align:top;
+    }
+    #inftxt{
+        color:red;
+        font-size:16px;
+    }
+    #hrfdiv{
+        margin-top:40px;
+    }
+    #hrfdiv>div{
+        display: inline-block;
+        width:20%;
+        vertical-align: top;
+    }
+    ul{
+        list-style-type:none;
+    }
+    li{
+        color:black;
+        font-family: 'Inter', sans-serif;
+        line-height:28px;
+        font-size: 11px;
+        font-weight:550;
+    }
+    h4{
+        font-family: 'Inter', sans-serif
+    }
+    #col2{
+        margin-left:36px;
+    }
+    #col3{
+        margin-left:46px;
+    }
+    #col4{
+        margin-left:70px;
+    }
+    li:hover{
+        text-decoration:underline;
+    }
+</style>
+<body>
+    <!-- footer -->
+    <div id="fcont">
+        <!-- social media bar start -->
+       <div id="medcont">
+           <div>
+               <div class="bdiv" style="height:100%;">
+                   <p style="font-family: 'Inter', sans-serif; font-weight:500; font-size:17px;">JOIN US ON SOCIAL</p>
+               </div>
+               <div class="bdiv" id="tdiv">
+                   <img src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/icons/twitter.png" alt="Twitter">
+               </div>
+               <div class="bdiv" id="fbdiv">
+                <img src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/facebook-icon.png" alt="fb">
+               </div>
+               <div class="bdiv" id="idiv">
+                    <img src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/instagram-icon.png" alt="Insta">
+                </div>
+               <div class="bdiv" id="ytdiv">
+                <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/yt_logo_mono_light-new.png" alt="yt">
+               </div>
+               <div class="bdiv" id="inpdiv">
+                   <div style="width:90%">   
+                       <input id="sinp" type="email" placeholder="SIGN UP FOR OUR EXCLUSIVE OFFERS">  
+                       <div id="inftxt"></div>
+                   </div>
+                   <div style="width:8%; text-align:center;line-height:50px;">
+                    <i class="fas fa-chevron-right"></i>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!-- href section -->
+
+       <div id=hrfdiv>
+            <div >
+                <h4 style="margin-left: 38px;">Love Your Body Club</h4>
+                <ul id="ul1">
+                    <li><a class="a1">FAQs</a></li>
+                    <li><a class="a2">Loyalty Club</a></li>
+                </ul>
+            </div>
+            <div id="col2">
+                <h4 style="margin-left: 38px;">ABOUT US</h4>
+                <ul id="ul2">
+                    <li><a  class="a1">About Us</a></li>
+                    <li><a>Affiliates</a></li>
+                    <li><a>Careers</a></li>
+                    <li><a>Dame Anita Roddick</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="col3">
+                <h4 style="margin-left: 38px;">USING THE WEBSITE</h4>
+                <ul id="ul3">
+                    <li><a>Terms & Conditions</a></li>
+                    <li><a>Privacy Policy</a></li>
+                    <li><a>Policy Documentation</a></li>
+                    <li><a>Packaging & Delivery FAQ's</a></li>
+                    <li><a>Sitemap</a></li>
+                    <li><a>FAQ Services</a></li>
+                </ul>
+            </div>
+            <div id="col4">
+                <h4 style="margin-left: 38px;">Commitment</h4>
+                <ul id="ul4">
+                    <li><a>Community Trade</href></a></li>
+                    <li><a>Ethical Trade</a></li>
+                    <li><a>Campaigns</a></li>
+                    <li><a>Our Commitment</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("i").addEventListener("click", inpCheck);
+
+    // email checker function
+    function inpCheck() {
+        var a=document.querySelector("#sinp").value;
+        if(a==""){
+            document.querySelector("#inftxt").textContent="This is a required field.";
+        } else {
+            emailCheck(a);
+        }
+    }
+
+    function emailCheck(line) {
+    var name="";
+    var std="abcdefghijklmnopqrstuvwxyz1234567890_-.";
+    var std1="abcdefghijklmnopqrstuvwxyz@";
+    var domain="";
+    var tld="";
+    var ind=0;
+    var ind1=0;
+    var ind2=0;
+    var check1=true;
+    var check2=true;
+    var check3=false;
+  
+    for(var i=0;i<line.length;i++) {
+      if(line[i]=="@") {
+        break;
+      } else {
+        name=name+line[i];
+        ind++;
+      }
+    }
+  
+    var nm1="";
+    if(name!="") {
+      for(var a=0;a<name.length;a++) {
+        for(var b=0;b<std.length;b++) {
+          if(name[a]==std[b]) {
+            nm1=nm1+name[a];
+          }
+        }
+      }
+    }
+    
+    if(nm1!=name) {
+      check1=false;
+    }
+  
+  
+  
+    for(var j=ind;j<line.length;j++) {
+      if(line[j]==".") {
+        break;
+      } else {
+        domain=domain+line[j];
+        ind1++;
+      }
+    }
+  
+    var dm1="";
+    if(domain!="") {
+      for(var a=0;a<domain.length;a++) {
+        for(var b=0;b<std1.length;b++) {
+          if(domain[a]==std1[b]) {
+            dm1=dm1+domain[a];
+          }
+        }
+      }
+    }
+    if((dm1=="@")||(dm1!=domain)) {
+      check2=false;
+    }
+  
+  
+    for(var k=ind1+ind;k<line.length;k++) {
+      tld=tld+line[k];
+    }
+  
+    if((tld==".com")||(tld==".net")||(tld==".org")) {
+      check3=true;
+    }
+    var checker="";
+    if((check1==true)&&(check2==true)&&(check3==true)) {
+    } else {
+      checker="Please enter a valid email address (Ex: johndoe@domain.com).";
+    }
+    document.querySelector("#inftxt").textContent=checker;
+  }
+
+
+
+    
+</script>
