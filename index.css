@@ -4,7 +4,6 @@
     margin: auto;
     font-family: 'Roboto', sans-serif;
     color: black;
-    cursor: pointer;
 }
 .navbar{
     position: sticky;
@@ -26,10 +25,12 @@
     display: flex;
     height: 34px;
     align-items: center;
+    cursor:pointer;
 }
 .left-header>img{
     margin: 2px;
     height: 28px;
+    cursor:pointer;
 }
 .left-header>a{
     color:black;
@@ -42,6 +43,7 @@
     margin-left: 5px;
     margin-right: 10px;
     height: 25px;
+    cursor:pointer;
 }
 .mid-header{
     display: flex;
@@ -73,6 +75,7 @@
     position: relative;
     left: -50px;
     padding-top: 3px;   
+    cursor:pointer;
 }
 .menu-navbar>.searchbar{
     display: flex;
@@ -177,6 +180,7 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
   padding-top: 160px;
+  cursor: pointer;
 }
 
 /* Next & previous buttons */
@@ -269,14 +273,69 @@ img {vertical-align: middle;}
 
 /* Grid card CSS */
 .grid-card{
-    display:flex;
+  /* border: solid red 1px; */
+    display:grid;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
     width: 100%;
     float: left;
 } 
 .grid-card>a>img{
-    width: 450px;
+    width: 500px;
+    margin-bottom: 40px;
 }
 
+
+/* srisha css code for footer section start hare */
+#textMainDiv{
+  width:100%;
+  /* height: 500px; */
+  margin:auto;
+}
+#textMainDiv>h1{
+  font-size:33px;
+  font-weight: bolder;
+    transform: scaleX(0.9);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+  /* font-size: 20px; */
+  text-align: center;
+  font-weight: 600;
+  font-size:20px;
+}
+#imgTxtDiv{
+  display:grid;
+  grid-template-columns: 50% 50% ;
+  grid-gap: 30px;
+}
+p{
+ font-size: 18px;
+  text-align: center;
+  line-height: 32px; 
+  font-weight: lighter;
+  padding-left: 25px ;
+  padding-right: 35px;
+}
+#imgTxtDiv~ #btnDiv{
+width: 200px;
+padding-top: 40px;
+padding-bottom: 50px;
+margin: auto; 
+}
+#btnDiv>button{
+  padding: 15px;
+  height: 50px;
+  font-weight: bold;
+  background-color: white;
+  font-size: medium;
+}
+#btnDiv>button:hover{
+  background-color: black;
+  color: white;
+}
+#txtDiv{
+  margin-left: 40px;
+  
+}

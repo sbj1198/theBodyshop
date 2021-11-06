@@ -1,16 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Cruelty-Free & Beauty Products| The Body Shop</title>
-    <link rel="shortcut icon" href="img\favicon.png" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="product.css">
+    <style>
+        body{
+            margin: 0px;
+        }
+        .container {
+            width: 95%;
+            height: 80px;
+            margin: auto;
+            font-family: 'Roboto', sans-serif;
+            color: black;
+            /* cursor: pointer; */
+            background-color: green;
+        }
+
+        .navbar {
+            position: sticky;
+            background-color: white;
+            position: fixed;
+            width: 95%;
+            z-index: 11;
+
+        }
+
+        .header {
+            /* border: solid green 1px; */
+            width: 100%;
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+        }
+
+        .left-header,
+        .mid-header,
+        .right-header {
+            margin-top: 28px;
+            display: flex;
+            height: 34px;
+            align-items: center;
+
+        }
+
+        .left-header>img {
+            margin: 2px;
+            height: 28px;
+            cursor: pointer;
+        }
+
+        .left-header>a {
+            color: black;
+            font-weight: 600px;
+            font-size: 14px;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        .right-header>a>img {
+            margin-left: 5px;
+            margin-right: 10px;
+            height: 25px;
+        }
+
+        .mid-header {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mid-header>img {
+            height: 35px;
+
+        }
+
+        .right-header {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .menu-navbar {
+            /* border: solid green 1px; */
+            display: grid;
+            height: 30px;
+            grid-template-columns: 72% 28%;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .menu>ul {
+            margin: 0px;
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            position: relative;
+            left: -50px;
+            padding-top: 3px;
+        }
+
+        .menu-navbar>.searchbar {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            left: 20px;
+        }
+
+        .searchbar>input {
+            width: 80%;
+            font-size: 16px;
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            color: #000000;
+            line-height: 20px;
+            z-index: 4;
+        }
+
+        .searchbar>img {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            right: 25px;
+            top: 7px;
+            z-index: 5;
+        }
+
+        .dropdown>li:hover {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 3px;
+            text-decoration-color: #000000;
+        }
+
+        .dropdown-content {
+            margin-top: 3px;
+            display: none;
+            position: absolute;
+            left: 50px;
+            right: 50px;
+            width: 207vh;
+            background-color: rgb(247, 247, 247);
+            z-index: 1;
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        li {
+            font: size 14px;
+            padding-top: 10px;
+
+        }
+
+        .dropdown-content>img {
+            height: 190px;
+            position: absolute;
+            right: 40px;
+            top: 30px;
+        }
+
+        .dropdown-content>ul li {
+            font-weight: none;
+            list-style-type: none;
+            font-weight: 100;
+        }
+
+        .dropdown-content>ul {
+            margin: 60px;
+        }
+
+        #bold {
+            font-weight: 800;
+        }
+
+        .dropdown-content>ul>li:hover {
+            color: gray;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: flex;
+        }
+
+        /* green strip code hare */
+        .club-strip {
+            border: solid rgb(184, 203, 132) 1px;
+            font-size: 18px;
+            text-align: center;
+            color: rgb(16, 16, 31);
+            background-color: rgb(184, 203, 132);
+            font-weight: bold;
+            z-index: 12;
+            margin-top: 10px;
+        }
+
+        .club-strip>p {
+            padding: 0px;
+            margin: 9px;
+        }
+
+        .club-strip>p>a {
+            color: rgb(16, 16, 31);
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Index page</h1>
+    <div class="container">
+        <!-- Navbar code start hare -->
+        <div class="navbar">
+            <div class="header content">
+                <!-- left header start -->
+                <div class="left-header">
+                    <img src="img\body-shop-icons-thick_map.svg" alt="Stores">
+                    <a title="Stores" href="#">Stores</a>
+                    <img src="img\loyality-card.png" alt="loyality password" />
+                    <a title="Stores" href="#"> Love Your Body™ Club</a>
+                    <img src="img\truck1.jpg" alt="truck img">
+                    <a title="Stores" href="#"> Track Order</a>
+                </div>
+                <!-- mid header start -->
+                <div class="mid-header">
+                    <img class="logo" src="img\logo.svg" alt="The Body Shop">
+                </div>
+                <!-- right header start -->
+                <div class="right-header"><a href="account.html">
+                        <img src="img\myaccount.png" alt="My Account"></a>
+                    <a href="account.html">
+                        <img src="img\body-shop-icons-thick_wishlist.svg" alt="Wish List"></a>
+                    <a href="account.html">
+                        <img src="img\body-shop-icons-thick_bag.svg" alt="Cart item"></a>
+                </div>
+                <!-- Header contents ends hare -->
+            </div>
+            <div class="menu-navbar">
+                <div class="menu">
+                    <ul>
+                        <div class="dropdown">
+                            <li style="color: red;">GIFTS</li>
+                            <div class="dropdown-content">
+                                <ul class="by-price">
+                                    <b>
+                                        <li>BY PRICE</li>
+                                    </b>
+                                    <li>Rs 1000 and Under Gifts</li>
+                                    <li>Rs 2000 and Under Gifts</li>
+                                    <li>Rs 3000 and Under Gifts</li>
+                                    <li>Rs 4000 and Under Gifts</li>
+                                </ul>
+
+                                <ul class="by-recipient">
+                                    <b>
+                                        <li>BY RECIPIENT</li>
+                                    </b>
+                                    <li>For Her</li>
+                                    <li>For Him</li>
+                                    <li>For Couples</li>
+                                    <li><b>OCCASION</b></li>
+                                    <li>Diwali Gifts</li>
+                                    <li>All Session Gift</li>
+                                </ul>
+                                <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/041-Q1-AO-2020-GIFTS-MEGA-MENU-416x219.jpg"
+                                    alt="" srcset="">
+                            </div>
+
+                        </div>
+                        <li>TRENDING</li>
+                        <li>SKIN CARE</li>
+                        <li>BODY</li>
+                        <li>HAIR</li>
+                        <li>MAKE UP</li>
+                        <li>FRAGRANCE</li>
+                        <li>RANGE</li>
+                        <li>MY SKIN TYPE</li>
+                        <li>TIPS & ADVICE</li>
+                        <li>ABOUT US</li>
+                        <li>OFFERS</li>
+                    </ul>
+
+                </div>
+                <div class="searchbar">
+                    <input type="text" placeholder="Search for products here...">
+                    <img src="img\Search_Icon.svg.png">
+                </div>
+            </div>
+
+            <!-- green strip code start hare -->
+            <div class="club-strip">
+                <p>FREE STANDARD SHIPPING FOR CLUB MEMBERS NOT A MEMBER? | <a href="product.html">JOIN NOW</a></p>
+            </div>
+        </div>
+        <div class="prod-container">
+            <div class="productview">
+                <!-- to display obout products -->
+
+
+
+            </div>
+            <div class="product-value">
+                <h1 id="prod-name">Lemon Purifying Hair & Body Wash</h1>
+                <p class="gray">IN STOCK</p>
+                <p class="gray">ITEM 15229</p>
+                <h1 id="price">MRP: ₹<span>1,195.00</span></h1>
+                <p style="color: green; font-weight: bold;">Inclusive of all taxes</p>
+                <div class="ratting">
+                    <p id="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> 5.0 (1) Write a Review
+                    </p>
+                </div>
+                <h3 class="size">Size 400 ML</h3>
+                <button id="size">400 ML</button>
+                <div class="qty">
+                    <p>QUANTITY</p><br>
+                    <div class="neg">
+                        <h2>-</h2>
+                    </div>
+                    <div class="qtyNum">
+                        <h2>3</h2>
+                    </div>
+                    <div class="plus">
+                        <h2>+</h2>
+                    </div>
+                </div>
+                <div class="cartbtn">
+                    <button type="button">ADD TO BAG</button>
+                    <img style="width:50px;"
+                        src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/icons/icon-wishlist.svg"
+                        alt="">
+                </div>
+                <p class="countryOrigin">Country of Origin: United Kingdom</p>
+                <p class="bestbefore">Best Before: 31/01/2024</p>
+                <div class="pincode-check">
+                    <p><b>Enter pincode to check availability</b></p>
+                    <input type="number">
+                    <button id="check">Check</button>
+                    <button id="cancel">Cancel</button>
+                </div>
+                <p>Start or end your day feeling cleansed and refreshed with our Lemon Purifying Hair & Body Wash. Jump
+                    in the shower and squirt out a dollop of our Hair & Body Wash. Lather up and intensely cleanse from
+                    head to toe. Take in that <br> <a href="#">SHOW MORE</a></p>
+
+            </div>
+        </div>
+        <!-- product sliding code  -->
+
+
+        <div class="nevigation">
+            <p>HOW TO USE</p>
+            <p>REVIEW</p>
+            <p>DELIVERY & RETURNS</p>
+            <p>MORE INFORMATION</p>
+        </div><br>
+        <div style="text-align:center;"><h2>HOW TO USE</h2>
+        <h3>Make The Most Of It</h3>
+        <br><b>
+        <p>Squirt out a dollop of our Hair & Body Wash. Lather up and cleanse head to toe. Rinse well with water.</p></b>
+        <br><br>
+        </div>
+        <div class="ratting-detail">
+            <div class="ratting">
+                <p id="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span> 5.0 1 Review
+                </p>
+            </div>
+            <input id="searchs" placeholder="Search topics and reviews">   
+            <button><img src="img\Search_Icon.svg.png" alt=""></button>  
+        </div>
+    </div>
 </body>
+
 </html>
+<script>
+
+
+    
+</script>

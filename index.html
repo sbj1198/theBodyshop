@@ -1,6 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    .loader {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  perspective: 800px;
+}
 
+.inner {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;  
+}
+
+.inner.one {
+  left: 0%;
+  top: 0%;
+  animation: rotate-one 1s linear infinite;
+  border-bottom: 3px solid black;
+}
+
+.inner.two {
+  right: 0%;
+  top: 0%;
+  animation: rotate-two 1s linear infinite;
+  border-right: 3px solid black;
+}
+
+.inner.three {
+  right: 0%;
+  bottom: 0%;
+  animation: rotate-three 1s linear infinite;
+  border-top: 3px solid black;
+}
+
+@keyframes rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -99,6 +165,7 @@
                 <p>FREE STANDARD SHIPPING FOR CLUB MEMBERS NOT A MEMBER? | <a href="product.html">JOIN NOW</a></p>
             </div>
         </div>
+        <div id="contents">
         <!-- Sliding window code -->
         <div class="slideshow-container">
 
@@ -158,10 +225,102 @@
                     src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Sheet_Mask_2_3.jpg" alt=""></a>
 
         </div>
+        <!-- sliding product part will be added below bu the aditya -->
+
+        <!-- Aditya pest you products sliding part code hare -->
+
+
+
+
+        <!-- After item slider and above the footer part is started hare by Srisha -->
+        <div id="textMainDiv">
+            <h1>COME TOGETHER ACT TOGETHER</h1>
+            <div id="imgTxtDiv">
+                <div id="imgDiv">
+                    <img style="width:100%;"
+                        src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Charity_Partner_Tile.jpg" />
+                </div>
+                <div id="txtDiv">
+                    <h2 style="font-weight: lighter;text-align: center">Join Our Fight To End Period Shame</h2>
+                    <p>Menstruation is a natural bodily function and yet period shame along with lack of access to
+                        menstrual hygiene products and awareness continues to hold back millions. A staggering 88% of
+                        menstruating women in India use unhygienic materials such as ash, dried leaves, old rags and
+                        newspapers to absorb menstrual discharge. We have partnered with CRY - Child Rights and You, a
+                        leading Indian non-profit to bring menstrual products, education and awareness to adolescent
+                        girls and women in slum communities hit by the pandemic. Through #DropThePWord, we are starting
+                        a national conversation around period shame and its adverse effects on the lives of people.
+                        Every donation brings us closer to reach our goal of providing menstrual hygiene products to
+                        10,000+ people across 4,500 households and every pledge brings us closer to winning our fight
+                        against period shame. You can also donate sealed packets of period products in our Red Period
+                        Bins across our all our stores which will be donated to local shelters through CRY.
+                    </p>
+                    <p>Join us online or in-store to support us in this fight..</p>
+                </div>
+            </div>
+            <div id="btnDiv"> <button>FIND OUT MORE</button> </div>
+            <div id="textMainDiv2">
+                <h1>THE BODY SHOP INDIA, ONLINE SHOPPING BODY CARE AND NATURAL BEAUTY!</h1>
+                <p>The Body Shop has been a manufacturer of body and beauty care products for the past Forty one years
+                    and has expanded its wings into the online world. We believe true beauty comes from the heart. For
+                    us, beauty is much more than just a pretty face. The Body Shop products are ready to meet your body
+                    care, toiletries, facials, skincare and hair care needs and are available at www.thebodyshop.in. All
+                    products have natural raw ingredients. We do not use animal products and do any animal testing for
+                    our products. The Body Shop has conducted many campaigns to ban animal testing. The Body Shop
+                    believes that true beauty comes from self-confidence, vitality and positive human thoughts.</p>
+                <h1>NATURAL BEAUTIFUL VIEWS WITH THE PRODUCT CIRCUITS THAT WE OFFER FROM NATURE</h1>
+                <p>The Body Shop believes that something good comes from good intentions. The Body Shop India encourages
+                    employees to learn new skills by funding various training programs, togetherness activities and
+                    health care, we aim to improve the prosperity of our staff. To be a better person the way is simple,
+                    that is by doing good. This is also one of the reasons we have a global policy for all our staff:
+                    spend at least three days per year doing volunteer work. Great people from The Body Shop who are
+                    passionate and tireless have taken this opportunity to make a difference, working with charities
+                    like Food For Life Vrindavan, which helps poor girls for Education , And Children on the Edge, which
+                    supports the rights of children around the world. So, we make a change not only from selling a
+                    variety of care products and cosmetics are 100% natural course. But also through many volunteer
+                    activities useful. Let's spread the love with us!</p>
+                <h1>WE GUARANTEE SAFE AND EASY PAYMENT PROCEDURES HERE!</h1>
+                <p>The Body Shop India also provides secure payment methods that can simplify your shopping
+                    transactions. We provide a transfer payment system with a wide selection of leading banks in India.
+                    We also take Cash on Delivery orders.</p>
+                <hr>
+            </div>
+        </div>
     </div>
-    </div>
+</div>
 </body>
 
 </html>
 
+<!-- <<<<<<< bhaskar -->
 <script src="index.js"></script>
+<!-- ======= -->
+<script>
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+<!-- script for grid item -->
