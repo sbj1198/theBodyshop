@@ -285,6 +285,135 @@
                 <hr>
             </div>
         </div>
+
+        <div id="fcont">
+            <!-- social media bar start -->
+           <div id="medcont">
+               <div>
+                   <div class="bdiv" style="height:100%;">
+                       <p style="font-family: 'Inter', sans-serif; font-weight:500; font-size:17px;">JOIN US ON SOCIAL</p>
+                   </div>
+                   <div class="bdiv" id="tdiv">
+                       <img src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/icons/twitter.png" alt="Twitter">
+                   </div>
+                   <div class="bdiv" id="fbdiv">
+                    <img src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/facebook-icon.png" alt="fb">
+                   </div>
+                   <div class="bdiv" id="idiv">
+                        <img src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/instagram-icon.png" alt="Insta">
+                    </div>
+                   <div class="bdiv" id="ytdiv">
+                    <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/yt_logo_mono_light-new.png" alt="yt">
+                   </div>
+                   <div class="bdiv" id="inpdiv">
+                       <div style="width:90%">   
+                           <input id="sinp" type="email" placeholder="SIGN UP FOR OUR EXCLUSIVE OFFERS">  
+                           <div id="inftxt"></div>
+                       </div>
+                       <div style="width:8%; text-align:center;line-height:50px;">
+                            <i class="fas fa-chevron-right"></i>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!-- href section -->
+    
+           <div id=hrfdiv>
+                <div >
+                    <h4 style="margin-left: 38px;">LOVE YOUR BODY CLUB</h4>
+                    <ul id="ul1">
+                        <li>FAQs</li>
+                        <li>Loyalty Club</li>
+                    </ul>
+                </div>
+                <div id="col2">
+                    <h4 style="margin-left: 38px;">ABOUT US</h4>
+                    <ul id="ul2">
+                        <li>About Us</li>
+                        <li>Affiliates</li>
+                        <li>Careers</li>
+                        <li>Dame Anita Roddick</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div id="col3">
+                    <h4 style="margin-left: 38px;">USING THE WEBSITE</h4>
+                    <ul id="ul3">
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Policy Documentation</li>
+                        <li>Packaging & Delivery FAQ's</li>
+                        <li>Sitemap</li>
+                        <li>FAQ Services</li>
+                    </ul>
+                </div>
+                <div id="col4">
+                    <h4 style="margin-left: 38px;">COMMITMENT</h4>
+                    <ul id="ul4">
+                        <li>Community Trade</li>
+                        <li>Ethical Trade</li>
+                        <li>Campaigns</li>
+                        <li>Our Commitment</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- copyright 1 -->
+            <div class=info>
+                <p>
+                    © 2021  THE BODY SHOP INTERNATIONAL LIMITED
+                </p>
+            </div>
+            <div class=info style="margin-left:630px;">
+                <select onchange="redirect()">
+                    <option value="India">India</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Belgium">Belgium/Belgique</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Danmark/Denmark">Danmark/Denmark</option>
+                    <option value="Deutschland/Germany">Deutschland/Germany</option>
+                    <option value="España/Spain">España/Spain</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="France">France</option>
+                    <option value="Global">Global</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Korea">Korea</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Suisse/Switzerland">Suisse/Switzerland</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Suomi/Finland">Suomi/Finland</option>
+                    <option value="Sverige/Sweden">Sverige/Sweden</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Türkiye/Turkey">Türkiye/Turkey</option>
+                    <option value="UK">UK</option>
+                    <option value="USA">USA</option>
+                    <option value="Vietnam">Vietnam</option>
+                </select>
+                <div id="drpdiv"></div>
+            </div>
+            <!-- privacy policy -->
+            <div  style="margin-top:20px;">
+                <div class=linfo>
+                    <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.</p>
+                    <p>REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
+                </div>
+                <div class=linfo style="float:right; width:25%;">
+                    <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png" width="100%">
+                </div>
+            </div>
     </div>
 </div>
 </body>
@@ -322,5 +451,104 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     }
+
+    document.querySelector("i").addEventListener("click", inpCheck);
+
+// email checker function
+function inpCheck() {
+    var a=document.querySelector("#sinp").value;
+    if(a==""){
+        document.querySelector("#inftxt").textContent="This is a required field.";
+    } else {
+        emailCheck(a);
+    }
+}
+
+function emailCheck(line) {
+var name="";
+var std="abcdefghijklmnopqrstuvwxyz1234567890_-.";
+var std1="abcdefghijklmnopqrstuvwxyz@";
+var domain="";
+var tld="";
+var ind=0;
+var ind1=0;
+var ind2=0;
+var check1=true;
+var check2=true;
+var check3=false;
+
+for(var i=0;i<line.length;i++) {
+  if(line[i]=="@") {
+    break;
+  } else {
+    name=name+line[i];
+    ind++;
+  }
+}
+
+var nm1="";
+if(name!="") {
+  for(var a=0;a<name.length;a++) {
+    for(var b=0;b<std.length;b++) {
+      if(name[a]==std[b]) {
+        nm1=nm1+name[a];
+      }
+    }
+  }
+}
+
+if(nm1!=name) {
+  check1=false;
+}
+
+
+
+for(var j=ind;j<line.length;j++) {
+  if(line[j]==".") {
+    break;
+  } else {
+    domain=domain+line[j];
+    ind1++;
+  }
+}
+
+var dm1="";
+if(domain!="") {
+  for(var a=0;a<domain.length;a++) {
+    for(var b=0;b<std1.length;b++) {
+      if(domain[a]==std1[b]) {
+        dm1=dm1+domain[a];
+      }
+    }
+  }
+}
+if((dm1=="@")||(dm1!=domain)) {
+  check2=false;
+}
+
+
+for(var k=ind1+ind;k<line.length;k++) {
+  tld=tld+line[k];
+}
+
+if((tld==".com")||(tld==".net")||(tld==".org")) {
+  check3=true;
+}
+var checker="";
+if((check1==true)&&(check2==true)&&(check3==true)) {
+} else {
+  checker="Please enter a valid email address (Ex: johndoe@domain.com).";
+}
+document.querySelector("#inftxt").textContent=checker;
+}
+
+//   select function
+function redirect(){
+   var s=document.querySelector("select").value;
+    console.log(s);
+    if(s!="India"){
+        document.querySelector("#drpdiv").textContent="Currently not available"
+    }
+}
 </script>
 <!-- script for grid item -->
