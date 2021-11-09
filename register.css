@@ -1,0 +1,154 @@
+div{
+    display: block;
+}
+.text_uppercase{
+    text-transform: uppercase;
+}
+.register_container{
+    width: 420px;
+    margin: 0 auto;
+}
+.form_create_account{
+    font-style: normal;
+    font-weight: 400;
+}
+.label{
+    font-weight: 600;
+    display: inline-block;
+    margin: 0 0 8px;
+}
+.black_button{
+    background: #111;
+    border: 2px solid #111;
+    border-radius: 0;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 15px;
+    height: 40px;
+    text-transform: uppercase;
+}
+.cursor_pointer{
+    cursor: pointer;
+}
+fieldset{
+    border: 0;
+}
+.main_register_container{
+    width: 100%;
+    max-width: 1300px;
+    background: #f7f7f7;
+    margin: 0 auto;
+}
+
+input[type=email]{
+    border: 1px solid #e1e1e1;
+    border-radius: 1px;
+    box-sizing: border-box;
+    color: #7d7d7d;
+    font-size: 16px;
+    height: 40px;
+    margin: 5px 0 15px;
+    padding: 0 10px;
+    font-style: normal;
+    font-weight: 400;
+    vertical-align: baseline;
+}
+input[type=password]{
+    border: 1px solid #e1e1e1;
+    border-radius: 1px;
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 40px;
+    margin: 5px 0 15px;
+    padding: 0 10px;
+    font-style: normal;
+    font-weight: 400;
+    vertical-align: baseline;
+}
+input[type=text]{
+    border: 1px solid #e1e1e1;
+    border-radius: 1px;
+    box-sizing: border-box;
+    color: #7d7d7d;
+    font-size: 16px;
+    height: 40px;
+    margin: 5px 0 15px;
+    padding: 0 10px;
+    font-style: normal;
+    font-weight: 400;
+    vertical-align: baseline;
+}
+.main_register_container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+:hover.customer_dob{
+    cursor: pointer;
+}
+#gender option:first-child{
+    display: none;
+}
+select option{
+    padding: 10px;
+    background: #fff;
+    box-shadow: none;
+}
+option{
+    min-height: 1.2em;
+    white-space: nowrap;
+    font-weight: normal;
+}
+select{
+    border: 1px solid #e1e1e1;
+    border-radius: 1px;
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 40px;
+    margin: 5px 0 15px;
+    padding: 0 10px;
+    font-style: normal;
+    font-weight: 400;
+    vertical-align: baseline;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+    background: #e1e1e1;
+    color: #111;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+meter{
+    /* Reset the default appearance */
+    appearance: none;
+    margin: 0 auto 1em;
+    width: 100%;
+    height: 0.5em;
+
+    /* Applicable only to firefox */
+    background: none;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+meter::-webkit-meter-bar{
+    background: none;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+/* webkit based browsers */
+
+meter[value="1"]::-webkit-meter-optimum-value {background: red;}
+meter[value="2"]::-webkit-meter-optimum-value {background: yellow;}
+meter[value="3"]::-webkit-meter-optimum-value {background: orange;}
+meter[value="4"]::-webkit-meter-optimum-value {background: green;}
+
+/* Gecko based browser */
+
+meter[value="1"]::-moz-meter-bar{background: red;}
+meter[value="2"]::-moz-meter-bar{background: yellow;}
+meter[value="3"]::-moz-meter-bar{background: orange;}
+meter[value="4"]::-moz-meter-bar{background: green;}
