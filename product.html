@@ -322,13 +322,13 @@
                 <div class="qty">
                     <p>QUANTITY</p><br>
                     <div class="neg">
-                        <h2>-</h2>
+                        <h2 id="dec">-</h2>
                     </div>
                     <div class="qtyNum">
-                        <h2>3</h2>
+                        <h2 id="item_qty">1</h2>
                     </div>
                     <div class="plus">
-                        <h2>+</h2>
+                        <h2 id="inc">+</h2>
                     </div>
                 </div>
                 <div class="cartbtn">
@@ -384,7 +384,22 @@
 
 </html>
 <script>
-
+    var item_qty=1;
+    document.getElementById("dec").addEventListener("click", dec)
+    document.getElementById("inc").addEventListener("click", inc)
+function inc(){
+    item_qty++;
+    document.getElementById("item_qty").textContent=item_qty;
+    console.log(item_qty);
+}
+function dec(){
+    
+    if(item_qty>=1){
+        item_qty--;
+        document.getElementById("item_qty").textContent=item_qty;
+        console.log(item_qty);
+    }   
+}
 
     
 </script>
