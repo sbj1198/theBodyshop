@@ -340,6 +340,7 @@ margin: auto;
   
 }
 
+/* footer */
 #medcont{    
   width:99%;
   margin:auto;
@@ -362,6 +363,7 @@ margin: auto;
   background-color:#f3f3f3;
   width:99%;
   height:90%;
+  vertical-align: top;
 }
 #tdiv{
   margin-left: 70px;
@@ -380,7 +382,7 @@ margin: auto;
   margin-top:10px;
 }
 #inpdiv{
-  border:2px solid black;
+  border:3px solid black;
   margin-left:65px;
   width:340px;
   height:80%;
@@ -403,17 +405,26 @@ margin: auto;
   width:20%;
   vertical-align: top;
 }
-ul{
+#ul1{
   list-style-type:none;
 }
-li{
+#ul2{
+  list-style-type:none;
+}
+#ul3{
+  list-style-type:none;
+}
+#ul4{
+  list-style-type:none;
+}
+.liAll{
   color:black;
   font-family: 'Inter', sans-serif;
   line-height:28px;
   font-size: 11px;
   font-weight:550;
 }
-h4{
+.h4{
   font-family: 'Inter', sans-serif;
   font-weight: 750;
 }
@@ -426,7 +437,7 @@ h4{
 #col4{
   margin-left:70px;
 }
-li:hover{
+.liAll:hover{
   text-decoration:underline;
 }
 .info{
@@ -435,15 +446,30 @@ li:hover{
   font-size: 14px;
   font-weight:600;
 }
-select{
+.info>p{
+  font-size:14px;
+  font-weight:600;
+}
+#select1{
   font-family: 'Inter', sans-serif;
   font-weight:500;
 }
-.linfo{
+#linfo{
   font-family: 'Inter', sans-serif;
   display:inline-block;
   font-size: 9px;
   font-weight:400;
+}
+#linfo1{
+  font-family: 'Inter', sans-serif;
+  display:inline-block;
+  
+}
+#linfo1>p{
+  font-size: 9px;
+  font-weight:400;
+  text-align: left;
+  line-height: 5px;
 }
 #drpdiv{
   color:red;
