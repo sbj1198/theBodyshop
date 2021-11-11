@@ -6,156 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/64d8096832.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="payments.css">
 </head>
 <style>
-body{
-    font-family: 'Inter', sans-serif;
-    margin:auto;
-}
-    /* nav bar */
-#navul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-}
 
-#li1 {
-  float: left;
-  font-size:12px;
-}
-
-#navul>li{
-  display: block;
-  color: white;
-  padding: 1% 2%;
-}
-
-/* nav ends */
-#cont1{
-    display: inline-block;
-    width:50%;
-    margin-left:10%;
-    background-color:whitesmoke;
-}
-#fdiv{
-    width:95%;
-    margin: auto;
-}
-#cont2{
-    border: 4px solid whitesmoke;
-    display: inline-block;
-    width:25%;
-    height:250px;
-    margin-left:4%;
-    vertical-align: top;
-}
-#c2div1{
-    border:2px solid whitesmoke;
-    background-color: whitesmoke;
-    height:25%;
-    padding-top:1%;
-    padding-left:3%;
-}
-#c2div2{ 
-    font-family: 'Inter', sans-serif;
-    height:14%;
-    padding-top:3%;
-    padding-left:3%;
-    display:inline-block;
-    font-weight:500;
-    font-size:14px;
-}
-#c2div3{ 
-    font-family: 'Inter', sans-serif;
-    height:14%;
-    padding-top:3%;
-    padding-right:10%;
-    float:right;
-    font-weight:500;
-    font-size:14px;
-}
-#c2div4{ 
-    font-family: 'Inter', sans-serif;
-    border:3px solid whitesmoke;
-    height:23%;
-    padding-top:4%;
-    padding-left:3%;
-    font-weight:500;
-    font-size:14px;
-}
-#c2div5{ 
-    font-family: 'Inter', sans-serif;
-    height:16%;
-    padding-top:4%;
-    padding-left:3%;
-    display:inline-block;
-    font-weight:600;
-    font-size:14px;
-}
-#c2div6{ 
-    font-family: 'Inter', sans-serif;
-    height:16%;
-    padding-top:4%;
-    padding-right:10%;
-    float:right;
-    font-weight:600;
-    font-size:14px;
-}
-#imgDisp{
-    width:80%;
-    height:40px;
-    background-color:whitesmoke;
-    margin:auto;
-    margin-top:70px;
-}
-#infdiv{
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    font-weight:600;
-    width:80%;
-    margin:auto;
-    text-align:center;
-    margin-top:40px;
-}
-#codDisp{
-    padding-left:5%;
-    font-size:14px;
-}
 </style>
 <body>
     <div>
         <ul id="navul">
             <li id="li1"> <i class="fas fa-chevron-left"></i> Back to Shop</li>
-            <li style="padding:0px;font-size:34px;margin-left: 640px;">THE BODY SHOP®</li>
+            <li style="padding:0px;font-size:34px;text-align: center;">THE BODY SHOP®</li>
           </ul>
     </div>
     <div style="text-align:center"><h2>CHECKOUT</h2></div>
     <div id="cont1">
         <div id="fdiv">
-            <form action="/action_page.php">
-                <p>PAYMENT METHOD:</p>
-                <br>
-                  <input type="radio" id="cardDetails" value="cardDet" name="paySelector">
-                  <label for="cardDetails">Pay Using Credit Card/ Debit Card/ Net BAnking (Ccavenuepay)</label><br>
-                <div id="cardInp"></div>
-                <br>
-                <hr>
-                <br>
-                  <input type="radio" id="cod" value="cod" name="paySelector">
-                  <label for="cod">Cash On Delivery</label><br>
-                <div id="codDisp"></div>
-                <br>
-            </form>
+           
+            <p>PAYMENT METHOD:</p>
+            <br>
+              <input type="radio" id="cardDetails" value="cardDet" name="paySelector">
+              <label for="cardDetails">Pay Using Credit Card/ Debit Card/ Net Banking (Ccavenuepay)</label><br>
+            <div id="cardInp"></div>
+            <br>
+            <hr>
+            <br>
+              <input type="radio" id="cod" value="cod" name="paySelector">
+              <label for="cod">Cash On Delivery</label><br>
+            <div id="codDisp"></div>
+            <br>
+            
         </div>
-        <!-- <form id="form">
-            <input id="card" type="number" placeholder="Enter Card Number"/>
-            <input id="cvv" type="number" placeholder="Enter your CVV"/>
-            <input id="date" type="month" placeholder="Enter Expire Date"/>
-            <input id="name" type="text" placeholder="Enter Name on the Card"/>
-            <input type="submit"/>
-        </form> -->
         
     </div>
     <div id="cont2">
@@ -190,41 +70,156 @@ body{
 </body>
 </html>
 <script>
-    document.querySelector("#cod").addEventListener("click", dispCod);
 
-    function dispCod(){
-        
-        var a=document.createElement("p");
-        a.textContent="To confirm your Cash on delivery order, Click on the VERIFY button, a 6 digit code will be sent to your mobile number";
-        var b=document.createElement("button");
-        b.setAttribute("id","verify");
-        b.textContent="Verify";
+    document.querySelector("#cardDetails").addEventListener("click", dispCard);
 
-        document.querySelector("#codDisp").append(a,b);
-        
+    var count1=0;
+    var count2=0;
+
+    function dispCard(){
+        count1++;
+        if(count1==1){
+            document.querySelector("#codDisp").innerHTML="";
+            var mdiv=document.createElement("div");
+            mdiv.setAttribute("id","mdiv");
+
+            var img=document.createElement("img");
+            img.setAttribute("src","https://www.gccsl.in/website/images/ccavenue.png");
+            img.setAttribute("id","img")
+
+            var br4=document.createElement("br");
+
+            var card=document.createElement("input");
+            card.setAttribute("type", "number");
+            card.setAttribute("id", "card");
+            card.setAttribute("placeholder","Enter Card Number");
+
+            var br1=document.createElement("br");
+
+            var cvv= document.createElement("input");
+            cvv.setAttribute("type", "number");
+            cvv.setAttribute("id", "cvv");
+            cvv.setAttribute("placeholder","CVV");
+
+            var date=document.createElement("input");
+            date.setAttribute("type", "month");
+            date.setAttribute("id", "date");
+
+            var br2=document.createElement("br");
+
+            var name=document.createElement("input");
+            name.setAttribute("placeholder", "Enter Name on Card");
+            name.setAttribute("id","name");
+
+            var br3=document.createElement("br");
+            
+            var btn=document.createElement("button");
+            btn.setAttribute("id", "button");
+            btn.textContent="pay";
+            btn.addEventListener("click", function(){
+                cardVer();
+            });
+
+            document.querySelector("#cardInp").append(img,br1,card,br2,cvv,date,br3,name,br4,btn);
+            
+
+            count2=0;
+        }
     }
 
-    document.querySelector("#verify").addeventListener("click", otpver);
 
-    function otpver(){
-        console.log("here");
-    }
-    
-    
-
-    function cardCheck(e){
-        e.preventDefault();
-        var card = document.querySelector("#card").value;
+    function cardVer(){
+        var card=document.querySelector("#card").value;
         var cvv=document.querySelector("#cvv").value;
         var date=document.querySelector("#date").value;
-        var name=document.querySelector("#name").value;
+        date=date.split("-").map(Number);
+        if(card.length==16 && cvv=="123" && date[0]>2021){
+            document.querySelector("#cardInp").innerHTML="";
+            var oinp=document.createElement("input");
+            oinp.setAttribute("placeholder","Enter OTP");
+            oinp.setAttribute("type","number");
+            oinp.setAttribute("id", "oinp");
+            var obtn=document.createElement("button");
+            obtn.textContent="Submit";
+            obtn.addEventListener("click",function(){
+                otpSub();
+            })
 
-        console.log((card.length));
-
-        if((card.length==16)&&(cvv=="123")&&(name=="aditya")){
-            window.location.href="otp.html";
+            document.querySelector("#cardInp").append(oinp,obtn);
         } else {
-            alert("Payment Rejected");
+            document.querySelector("#card").value="";
+            document.querySelector("#cvv").value="";
+            document.querySelector("#date").value="";
+            alert("Invalid Card Details");
+        }
+    }
+
+    function otpSub(){
+        var oinp=document.querySelector("#oinp").value;
+        console.log(oinp);
+        if(oinp=="0000"){
+            alert("Order Sucessfully Placed");
+            document.querySelector("#cont1").innerHTML="";
+            document.querySelector("#cont1").innerHTML="";
+            var h1=document.createElement("h1");
+            h1.textContent="Thank You for Ordering from us";
+
+            document.querySelector("#cont1").append(h1);
+        }
+    }
+
+
+    // cod
+    document.querySelector("#cod").addEventListener("click", dispCod);
+
+    
+
+    function dispCod(){
+        count2++;
+        if(count2==1){
+            document.querySelector("#cardInp").innerHTML="";
+            var a=document.createElement("p");
+            a.textContent="To confirm your Cash on delivery order, Click on the VERIFY button, a 6 digit code will be sent to your mobile number";
+            var b=document.createElement("button");
+            b.textContent="Verify";
+            b.addEventListener("click", function(){
+                otpVer();
+            });
+
+            document.querySelector("#codDisp").append(a,b);
+            count1=0;
+        }
+        
+    }
+
+    function otpVer(){
+        
+        var inp=document.createElement("input");
+        inp.setAttribute("placeholder", "Enter OTP");
+        inp.setAttribute("type", "number");
+        var con=document.createElement("button");
+        con.setAttribute("id", "codInp");
+        con.textContent="Confirm";
+        con.addEventListener("click",function(){
+            otpCheck();
+        });
+        document.querySelector("#codDisp").innerHTML="";
+        document.querySelector("#codDisp").append(inp,con);
+    }
+
+    function otpCheck(){
+        var x=document.querySelector("#codDisp>input").value;
+        if(x=="654321"){
+            alert("Order Sucessfully Placed");
+            document.querySelector("#cont1").innerHTML="";
+            var h1=document.createElement("h1");
+            h1.textContent="Thank You for Ordering from us";
+
+            document.querySelector("#cont1").append(h1);
+
+        } else {
+            alert("Invalid OTP Code");
+            document.querySelector("#codDisp>input").value='';
         }
     }
 

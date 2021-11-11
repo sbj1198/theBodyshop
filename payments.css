@@ -1,0 +1,158 @@
+body{
+    font-family: 'Inter', sans-serif;
+    margin:auto;
+}
+    /* nav bar */
+#navul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+#li1 {
+  float: left;
+  font-size:12px;
+}
+
+#navul>li{
+  display: block;
+  color: white;
+  padding: 1% 2%;
+}
+
+/* nav ends */
+#cont1{
+    display: inline-block;
+    width:50%;
+    margin-left:10%;
+    background-color:whitesmoke;
+}
+#fdiv{
+    width:95%;
+    margin: auto;
+}
+#cont2{
+    border: 4px solid whitesmoke;
+    display: inline-block;
+    width:25%;
+    height:250px;
+    margin-left:4%;
+    vertical-align: top;
+}
+#c2div1{
+    border:2px solid whitesmoke;
+    background-color: whitesmoke;
+    height:25%;
+    padding-top:1%;
+    padding-left:3%;
+}
+#c2div2{ 
+    font-family: 'Inter', sans-serif;
+    height:14%;
+    padding-top:3%;
+    padding-left:3%;
+    display:inline-block;
+    font-weight:500;
+    font-size:14px;
+}
+#c2div3{ 
+    font-family: 'Inter', sans-serif;
+    height:14%;
+    padding-top:3%;
+    padding-right:10%;
+    float:right;
+    font-weight:500;
+    font-size:14px;
+}
+#c2div4{ 
+    font-family: 'Inter', sans-serif;
+    border:3px solid whitesmoke;
+    height:23%;
+    padding-top:4%;
+    padding-left:3%;
+    font-weight:500;
+    font-size:14px;
+}
+#c2div5{ 
+    font-family: 'Inter', sans-serif;
+    height:16%;
+    padding-top:4%;
+    padding-left:3%;
+    display:inline-block;
+    font-weight:600;
+    font-size:14px;
+}
+#c2div6{ 
+    font-family: 'Inter', sans-serif;
+    height:16%;
+    padding-top:4%;
+    padding-right:10%;
+    float:right;
+    font-weight:600;
+    font-size:14px;
+}
+#imgDisp{
+    width:80%;
+    height:40px;
+    background-color:whitesmoke;
+    margin:auto;
+    margin-top:70px;
+}
+#infdiv{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight:600;
+    width:80%;
+    margin:auto;
+    text-align:center;
+    margin-top:40px;
+}
+#codDisp{
+    padding-left:5%;
+    font-size:14px;
+}
+#codInp{
+    background-color:lightgreen;
+    font-family: 'Inter', sans-serif;
+    font-weight:500;
+}
+#cardInp{
+    margin:auto;
+    text-align:center;
+    padding:2%;
+}
+#img{
+    width:40%;
+    height:150px;
+    margin-top:3%;
+}
+#card{
+    width:40%;
+    height:22px;
+    margin-top:1%;
+    margin-bottom:1%;
+}
+#cvv{
+    width:8%;
+    height:20px;
+    margin-top:1%;
+    margin-bottom:1%;
+    margin-right:5%;
+}
+#name{
+    width:40%;
+    height:22px;
+    margin-top:1%;
+    margin-bottom:1%;
+}
+#button{
+    background-color:lightgreen;
+    width:10%;
+    margin:2%;
+    padding:1%;
+}
+#cont1>h1{
+    margin-left:9%;
+}
