@@ -113,7 +113,7 @@
     position: absolute;
     left: 50px;
     right: 50px;
-    width: 207vh;
+    width: 205vh;
     background-color:rgb(247,247,247);
     z-index: 1;
     height:auto;
@@ -282,7 +282,7 @@ img {vertical-align: middle;}
     float: left;
 } 
 .grid-card>a>img{
-    width: 500px;
+    width: 65vh;
     margin-bottom: 40px;
 }
 
@@ -319,7 +319,7 @@ p{
   padding-right: 35px;
 }
 #imgTxtDiv~ #btnDiv{
-width: 200px;
+width: 30vh;
 padding-top: 40px;
 padding-bottom: 50px;
 margin: auto; 

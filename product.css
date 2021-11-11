@@ -7,12 +7,10 @@
 .prod-container>.productview{
     width: 60%;
     height: 800px;
-    border: solid 1px green;
 }
 .prod-container>.product-value{
     width: 39%;
-    /* height: 600px; */
-    /* border: solid 1px green; */
+   
 }
 .gray{
     color: gray;
@@ -121,4 +119,31 @@ button>img{
     top: 7px;
     right: 5px
 
+}
+.productview{
+    margin: auto;
+    padding-left: 200px;
+}
+
+.largImg>img{
+    width:600px;
+}
+.moreImg{
+    position: relative;
+    margin-left: 60px;
+    top: -30px;
+}
+.moreImg>img{
+    width: 20%;
+}
+#imgname{
+    z-index: 5; 
+    background:white;
+    display: inline-block;
+    position: relative;
+    bottom:40px;
+    right:-150px;
+}   
+.moreImg>img:hover{
+    border: 3px solid black;
 }
