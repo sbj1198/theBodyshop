@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form id="form">
+            <input id="card" type="number" placeholder="Enter Card Number"/>
+            <input id="cvv" type="number" placeholder="Enter your CVV"/>
+            <input id="date" type="month" placeholder="Enter Expire Date"/>
+            <input id="name" type="text" placeholder="Enter Name on the Card"/>
+            <input type="submit"/>
+        </form>
+        <div>
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/secured.png"/>
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/master-card.png"/>
+            <img src ="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/visa.png"/>
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/american-express.png"/>
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png"/>
+            <img src="https://www.gccsl.in/website/images/ccavenue.png"/>
+            <img src=""/>
+            <img src=""/>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    document.querySelector("#form").addEventListener("submit", cardCheck);
+    
+
+    function cardCheck(e){
+        e.preventDefault();
+        var card = document.querySelector("#card").value;
+        var cvv=document.querySelector("#cvv").value;
+        var date=document.querySelector("#date").value;
+        var name=document.querySelector("#name").value;
+
+        console.log((card.length));
+
+        if((card.length==16)&&(cvv=="123")&&(name=="aditya")){
+            window.location.href="otp.html";
+        } else {
+            alert("Payment Rejected");
+        }
+    }
+
+</script>
