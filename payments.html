@@ -5,32 +5,211 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/64d8096832.js" crossorigin="anonymous"></script>
 </head>
+<style>
+body{
+    font-family: 'Inter', sans-serif;
+    margin:auto;
+}
+    /* nav bar */
+#navul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+#li1 {
+  float: left;
+  font-size:12px;
+}
+
+#navul>li{
+  display: block;
+  color: white;
+  padding: 1% 2%;
+}
+
+/* nav ends */
+#cont1{
+    display: inline-block;
+    width:50%;
+    margin-left:10%;
+    background-color:whitesmoke;
+}
+#fdiv{
+    width:95%;
+    margin: auto;
+}
+#cont2{
+    border: 4px solid whitesmoke;
+    display: inline-block;
+    width:25%;
+    height:250px;
+    margin-left:4%;
+    vertical-align: top;
+}
+#c2div1{
+    border:2px solid whitesmoke;
+    background-color: whitesmoke;
+    height:25%;
+    padding-top:1%;
+    padding-left:3%;
+}
+#c2div2{ 
+    font-family: 'Inter', sans-serif;
+    height:14%;
+    padding-top:3%;
+    padding-left:3%;
+    display:inline-block;
+    font-weight:500;
+    font-size:14px;
+}
+#c2div3{ 
+    font-family: 'Inter', sans-serif;
+    height:14%;
+    padding-top:3%;
+    padding-right:10%;
+    float:right;
+    font-weight:500;
+    font-size:14px;
+}
+#c2div4{ 
+    font-family: 'Inter', sans-serif;
+    border:3px solid whitesmoke;
+    height:23%;
+    padding-top:4%;
+    padding-left:3%;
+    font-weight:500;
+    font-size:14px;
+}
+#c2div5{ 
+    font-family: 'Inter', sans-serif;
+    height:16%;
+    padding-top:4%;
+    padding-left:3%;
+    display:inline-block;
+    font-weight:600;
+    font-size:14px;
+}
+#c2div6{ 
+    font-family: 'Inter', sans-serif;
+    height:16%;
+    padding-top:4%;
+    padding-right:10%;
+    float:right;
+    font-weight:600;
+    font-size:14px;
+}
+#imgDisp{
+    width:80%;
+    height:40px;
+    background-color:whitesmoke;
+    margin:auto;
+    margin-top:70px;
+}
+#infdiv{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight:600;
+    width:80%;
+    margin:auto;
+    text-align:center;
+    margin-top:40px;
+}
+#codDisp{
+    padding-left:5%;
+    font-size:14px;
+}
+</style>
 <body>
     <div>
-        <form id="form">
+        <ul id="navul">
+            <li id="li1"> <i class="fas fa-chevron-left"></i> Back to Shop</li>
+            <li style="padding:0px;font-size:34px;margin-left: 640px;">THE BODY SHOP®</li>
+          </ul>
+    </div>
+    <div style="text-align:center"><h2>CHECKOUT</h2></div>
+    <div id="cont1">
+        <div id="fdiv">
+            <form action="/action_page.php">
+                <p>PAYMENT METHOD:</p>
+                <br>
+                  <input type="radio" id="cardDetails" value="cardDet" name="paySelector">
+                  <label for="cardDetails">Pay Using Credit Card/ Debit Card/ Net BAnking (Ccavenuepay)</label><br>
+                <div id="cardInp"></div>
+                <br>
+                <hr>
+                <br>
+                  <input type="radio" id="cod" value="cod" name="paySelector">
+                  <label for="cod">Cash On Delivery</label><br>
+                <div id="codDisp"></div>
+                <br>
+            </form>
+        </div>
+        <!-- <form id="form">
             <input id="card" type="number" placeholder="Enter Card Number"/>
             <input id="cvv" type="number" placeholder="Enter your CVV"/>
             <input id="date" type="month" placeholder="Enter Expire Date"/>
             <input id="name" type="text" placeholder="Enter Name on the Card"/>
             <input type="submit"/>
-        </form>
-        <div>
-            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/secured.png"/>
+        </form> -->
+        
+    </div>
+    <div id="cont2">
+        <div id="c2div1"><h3>Order Summery</h3></div>
+        
+        <div id="c2div2">Cart Subtotal:</div>
+        <div id="c2div3">100</div>
+        
+        <div id="c2div4">Shipping Charges:   ₹.100<div>3 - 5 Working days- Standard Delivery</div></div>
+        <div id="c2div5">Order Total (incl. GST):</div>
+        <div id="c2div6">50</div>
+    </div>
+    <div id="imgDisp">
+            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/secured.png" style="margin-left:500px;"/>
             <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/master-card.png"/>
             <img src ="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/visa.png"/>
             <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/american-express.png"/>
-            <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png"/>
-            <img src="https://www.gccsl.in/website/images/ccavenue.png"/>
-            <img src=""/>
-            <img src=""/>
+    </div>
+    <div id="infdiv">
+        <div >
+            <!-- 
+            <img src="https://www.gccsl.in/website/images/ccavenue.png"/> -->
+            <div> © 2021  THE BODY SHOP INTERNATIONAL LIMITED</div>
+            <div><img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png"/></div>
+            <div>
+                <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.</p>
+                <p>REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
+            </div>
         </div>
     </div>
     
 </body>
 </html>
 <script>
-    document.querySelector("#form").addEventListener("submit", cardCheck);
+    document.querySelector("#cod").addEventListener("click", dispCod);
+
+    function dispCod(){
+        
+        var a=document.createElement("p");
+        a.textContent="To confirm your Cash on delivery order, Click on the VERIFY button, a 6 digit code will be sent to your mobile number";
+        var b=document.createElement("button");
+        b.setAttribute("id","verify");
+        b.textContent="Verify";
+
+        document.querySelector("#codDisp").append(a,b);
+        
+    }
+
+    document.querySelector("#verify").addeventListener("click", otpver);
+
+    function otpver(){
+        console.log("here");
+    }
+    
     
 
     function cardCheck(e){
