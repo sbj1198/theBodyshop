@@ -2,71 +2,75 @@
 <html lang="en">
 <style>
     .loader {
-  position: absolute;
-  top: calc(50% - 32px);
-  left: calc(50% - 32px);
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  perspective: 800px;
-}
+        position: absolute;
+        top: calc(50% - 32px);
+        left: calc(50% - 32px);
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        perspective: 800px;
+    }
 
-.inner {
-  position: absolute;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;  
-}
+    .inner {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
 
-.inner.one {
-  left: 0%;
-  top: 0%;
-  animation: rotate-one 1s linear infinite;
-  border-bottom: 3px solid black;
-}
+    .inner.one {
+        left: 0%;
+        top: 0%;
+        animation: rotate-one 1s linear infinite;
+        border-bottom: 3px solid black;
+    }
 
-.inner.two {
-  right: 0%;
-  top: 0%;
-  animation: rotate-two 1s linear infinite;
-  border-right: 3px solid black;
-}
+    .inner.two {
+        right: 0%;
+        top: 0%;
+        animation: rotate-two 1s linear infinite;
+        border-right: 3px solid black;
+    }
 
-.inner.three {
-  right: 0%;
-  bottom: 0%;
-  animation: rotate-three 1s linear infinite;
-  border-top: 3px solid black;
-}
+    .inner.three {
+        right: 0%;
+        bottom: 0%;
+        animation: rotate-three 1s linear infinite;
+        border-top: 3px solid black;
+    }
 
-@keyframes rotate-one {
-  0% {
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-  }
-}
+    @keyframes rotate-one {
+        0% {
+            transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+        }
 
-@keyframes rotate-two {
-  0% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-  }
-}
+        100% {
+            transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+        }
+    }
 
-@keyframes rotate-three {
-  0% {
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-  }
-}
+    @keyframes rotate-two {
+        0% {
+            transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+        }
+
+        100% {
+            transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+        }
+    }
+
+    @keyframes rotate-three {
+        0% {
+            transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+        }
+
+        100% {
+            transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+        }
+    }
 </style>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -78,11 +82,20 @@
     <link rel="shortcut icon" href="img\favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/8638c77061.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://kit.fontawesome.com/64d8096832.js" crossorigin="anonymous"></script>
 
@@ -123,9 +136,8 @@
                             <li style="color: red;">GIFTS</li>
                             <div class="dropdown-content">
                                 <ul class="by-price">
-                                    <b>
-                                        <li>BY PRICE</li>
-                                    </b>
+                                    <li><b>BY PRICE</b></li>
+
                                     <li>Rs 1000 and Under Gifts</li>
                                     <li>Rs 2000 and Under Gifts</li>
                                     <li>Rs 3000 and Under Gifts</li>
@@ -133,9 +145,7 @@
                                 </ul>
 
                                 <ul class="by-recipient">
-                                    <b>
-                                        <li>BY RECIPIENT</li>
-                                    </b>
+                                    <li><b>BY RECIPIENT</b></li>
                                     <li>For Her</li>
                                     <li>For Him</li>
                                     <li>For Couples</li>
@@ -148,8 +158,61 @@
                             </div>
 
                         </div>
-                        <li>TRENDING</li>
-                        <li>SKIN CARE</li>
+
+                        <!-- 2nd menu drop down -->
+                        <div class="dropdown">
+                            <li>TRENDING</li>
+                            <div class="dropdown-content">
+                                <ul class="shop-by-trending">
+                                    <li><b>Shop By Trending</b></li>
+                                    <li>New One</li>
+                                    <li>Top Rated</li>
+                                    <li>Bestsellers</li>
+                                    <li>Vegan</li>
+                                </ul>
+
+                                <ul class="by-recipient">
+                                    <b>
+                                        <li>Join Love Your Body Club</li>
+                                    </b>
+                                    <li>Trave Sizes</li>
+                                    <li>For Him</li>
+                                    <li>Promotion T&C</li>
+
+                                </ul>
+                                <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/019-Q2-2021-NPD_SEASONALS_RANGE-MEGA-MENU-416x219_1.jpg"
+                                    alt="" srcset="">
+                            </div>
+
+                        </div>
+
+
+                        <!-- 3rd menu drop -->
+                        <div class="dropdown">
+                            <li>SKIN CARE</li>
+                            <div class="dropdown-content">
+                                <ul class="shop-by-trending">
+                                    <li><b>Shop By Trending</b></li>
+                                    <li>New One</li>
+                                    <li>Top Rated</li>
+                                    <li>Bestsellers</li>
+                                    <li>Vegan</li>
+                                </ul>
+
+                                <ul class="by-recipient">
+                                    <b>
+                                        <li>Join Love Your Body Club</li>
+                                    </b>
+                                    <li>Trave Sizes</li>
+                                    <li>For Him</li>
+                                    <li>Promotion T&C</li>
+
+                                </ul>
+                                <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/019-Q2-2021-NPD_SEASONALS_RANGE-MEGA-MENU-416x219_1.jpg"
+                                    alt="" srcset="">
+                            </div>
+
+                        </div>
                         <li>BODY</li>
                         <li>HAIR</li>
                         <li>MAKE UP</li>
@@ -174,464 +237,528 @@
             </div>
         </div>
         <div id="contents">
-        <!-- Sliding window code -->
-        <div class="slideshow-container">
+            <!-- Sliding window code -->
+            <div class="slideshow-container">
 
-            <div class="mySlides fade">
-                <!-- <div class="numbertext">1 / 3</div> -->
-                <img src="https://staticbodyshop.gumlet.io/pub/media/weltpixel/owlcarouselslider/images/d/i/diwali_hpc_11.jpg"
-                    style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <!-- <div class="numbertext">2 / 3</div> -->
-                <img src="https://staticbodyshop.gumlet.io/pub/media/weltpixel/owlcarouselslider/images/g/i/gifing_hpc__4.jpg"
-                    style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-                <!-- <div class="numbertext">3 / 3</div> -->
-                <img src="https://staticbodyshop.gumlet.io/pub/media/weltpixel/owlcarouselslider/images/h/o/homepage_littlelife.jpg"
-                    style="width:100%">
-
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-
-        <!-- Grid code start hare -->
-        <div class="grid-card">
-
-            <a href="product.html"><img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/50_.jpg"
-                    alt=""></a>
-
-            <a href="product.html"><img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Give_joy.jpg"
-                    alt=""></a>
-
-
-            <a href="product.html"><img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Vitamin_C.jpg"
-                    alt=""></a>
-
-            <a href="product.html"><img
-                    src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/HDFC_latest.jpg" alt=""></a>
-
-            <a href="product.html"><img
-                    src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Gift_card_2.jpg" alt=""></a>
-
-            <a href="product.html"><img
-                    src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Sheet_Mask_2_3.jpg" alt=""></a>
-
-        </div>
-        <!-- sliding product part will be added below bu the aditya -->
-
-        <!-- Aditya pest you products sliding part code hare -->
-        <div id="main">
-            <h1 id="slidehead">NEW IN</h1>
-        <div id="container1">
-        <div id="hig" class="owl-carousel owl-theme container1">
-            <div class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1012282_FACE-WASH-LEMON-125ML-LH_BRNZ_INAAUPS676_-_Copy.jpg" alt="">
-        
-                </a>
-                <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Lemon Purifying Face Wash</h5>
-                <div class="price-box price-final_price mar5"><span class="price">₹945.00</span></div>
-                    <button id="bt1">View</button>
-            </div>
-            <div class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1012250_HAIR_BODY_WASH_LEMON_400ML_LH_BRNZ_INECMPS417.jpg" alt="">
-        
-                </a>
-                <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Lemon Purifying Hair &amp; Body Wash</h5>
-                <div class="price-box price-final_price mar5"><span class="price">₹1195.00</span></div>
-                
-                    <button id="bt1">View</button>
-            </div>
-            <div class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1012280_HAND_BODY_LOTION_LEMON_200ML_A0X_BRNZ_INECMPS424_-_Copy.jpg" alt="">
-        
-                </a>
-                <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Lemon Protecting Hand &amp; Body Lotion</h5>
-                <div class="price-box price-final_price mar5"><span class="price">₹1195.00</span></div>
-                    <button id="bt1">View</button>
-            </div>
-            <div class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1010158_Himalayan_Charcoal_Sleeping_Serum_30ml_AOX_BRNZ_INECOPS038.jpg" alt="">
-        
-                </a>
-                <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Himalayan Charcoal Skin Clarifying Night Peel</h5>
-                <div class="price-box price-final_price mar5"><span class="price">₹2095.00</span></div>
-                    <button id="bt1">View</button>
-            </div>
-            <div class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1098645_BODY_YOGURT_COOL_DAISY_200ML_A0X_BRNZ_INECOPS228.jpg" alt="">
-        
-                </a>
-                <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Cool Daisy Body Yogurt</h5>
-                <div class="price-box price-final_price mar5"><span class="price">₹995.00</span></div>
-                    <button id="bt1">View</button>
-            </div>
-            <div class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1010039_Lip_and_Cheek_Stain_Sunshine_orange_BRNZ_INECMPS388.jpg" alt="">
-        
-                </a>
-                <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Lip &amp; Cheek Stain Sunshine Orange</h5>
-                <div class="price-box price-final_price mar5"><span class="price">₹995.00</span></div>
-                    <button id="bt1">View</button>
-            </div>
-            <div class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1098462_BODY_MIST_FRESH_RASPBERRY_100ML_A0X_BRNZ_INECOPS231.jpg" alt="">
-        
-                </a>
-                <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Fresh Raspberry Hydrating Body Mist</h5>
-                <div class="price-box price-final_price mar5"><span class="price">₹1345.00</span></div>
-                
-                    <button id="bt1">View</button>
-            </div>
-            <div class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1098646_BODY_MIST_COOL_DAISY_100ML_A0X_BRNZ_INECOPS227.jpg" alt="">
-        
-                </a>
-                <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Cool Daisy Hydrating Body Mist</h5>
-                <div class="price-box price-final_price mar5"><span class="price">₹1345.00</span></div>
-                
-                    <button id="bt1">View</button>
-            </div>
-            
-        </div>
-                <!--WISHLIST HEART STARTINGF FROM HERE  -->
-    
-                <h1 id="slideh2">PERSONALIZED FOR YOU</h1>
-    
-        <div  class="owl-carousel owl-theme container1">
-            <div  id="inc" class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://dev2m23.thebodyshop.in/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1088765_1_all_mine_mist_100ml_brnz_incrhps314.jpeg" alt="">
-                </a>
-                <h5 i class="productnm">    All Mine Fragrance Mist           </h5>
-                <div class="price-bx price-final_price mar5"><span id="ic" class="price">₹1,445.00</span></div>
-                 <div class="clk"><i  class=" far fa-heart fa-lg"></i></div>
-          
-        
-               
-               
-            </div>
-    
-            <div  id="inc" class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/v/a/vanilla_eau_de_toilette_30ml.jpg" alt="">
-        
-                </a>
-                <h5 i class="productnm">       Vanilla Eau De Toilette             </h5>
-        
-                <div class="price-bx price-final_price mar5"><span class="price">₹1,045.00</span></div>
-                <div class="clk"><i  class=" far fa-heart fa-lg"></i></div>
-                
-            </div>
-            <div  id="inc" class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/v/i/vitamin_e_moisture-protect_lip_care_spf_15_42g_1_inrslps688_1_.jpg" alt="">
-        
-                </a>
-                <h5 i class="productnm">    Vitamin E Lip Care SPF 15         </h5>
-                
-                <div class="price-bx price-final_price mar5"><span class="price">₹395.00</span></div>
-                <div class="clk"><i  class=" far fa-heart fa-lg"></i></div>
-             
-            </div>
-            <div  id="inc" class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-30176001-1.jpg" alt="">
-        
-                </a>
-                <h5 i class="productnm"> Vitamin C Daily Glow Cleansing Polish     </h5>
-                <div class="price-bx price-final_price mar5"><span class="price">₹1295.00</span></div>
-                <div class="clk"><i  class=" far fa-heart fa-lg"></i></div>
-            </div>
-            <div  id="inc" class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1059520_1_my_pick_mist_100ml_brnz_incrhps326.jpeg" alt="">
-        
-                </a>
-                <h5 i class="productnm"> Spritz My Pick Fragrance Mist           </h5>
-                <div class="price-bx price-final_price mar5"><span class="price">₹1445.00</span></div>
-                <div class="clk"><i  class=" far fa-heart fa-lg"></i></div>
-            </div>
-            <div  id="inc" class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1047466_2_cleansing_foam_dol_125ml_silv_pck_inbosps371.jpg" alt="">
-        
-                </a>
-                <h5 i class="productnm">   Drops Of Light Brightening Cleansing Foam          </h5>
-                <div class="price-bx price-final_price mar5"><span class="price">₹1695.00</span></div>
-                <div class="clk"><i  class=" far fa-heart fa-lg"></i></div>
-            </div>
-            <div  id="inc" class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-20014001-1.jpg" alt="">
-        
-                </a>
-                <h5 i class="productnm">Seaweed Cleansing Facial Wash            </h5>
-                <a class="product-item-link" href="https://www.thebodyshop.in/spritz-my-pick-fragrance-mist.html">                                                   </a>
-                <div class="price-bx price-final_price mar5"><span class="price">₹945.00</span></div>
-                
-                <div class="clk"><i  class=" far fa-heart fa-lg"></i></div>
-            </div>
-            <div  id="inc" class="item">
-                <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
-                    <img class ="img" src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1098649_fra_mist_let_s_bloom_100ml_a36_brnz_inecmps137.jpg" alt="">
-        
-                </a>
-                <h5 i class="productnm"> Let's Bloom Spritz  Body Mist                </h5>
-                <div class="price-bx price-final_price mar5"><span class="price">₹1545.00</span></div>
-                
-                <div class="clk"><i  class=" far fa-heart fa-lg"></i></div>
-            </div>
-            
-        </div>
-    
-    </div>
-    </div>
-         <!-- Script for Slider -->       
-   
-    <script>
-    
-        var prev = '<img src="https://thebodyshop.in/media/wysiwyg/icons/left.png">'
-        var next = '<img src="https://thebodyshop.in/media/wysiwyg/icons/right.png">'
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        navText:[
-        prev ,
-        next
-        ],
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:4
-            }
-        }
-    })
-    
-    $('.clk ').click(function(){
-        $(this).find('i').toggleClass('far fa-heart fas fa-heart')
-    });
-    
-    </script>
- <!-- Script for Slider Ends -->    
-
-
-
-        <!-- After item slider and above the footer part is started hare by Srisha -->
-        <div id="textMainDiv">
-            <h1>COME TOGETHER ACT TOGETHER</h1>
-            <div id="imgTxtDiv">
-                <div id="imgDiv">
-                    <img style="width:100%;"
-                        src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Charity_Partner_Tile.jpg" />
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">1 / 3</div> -->
+                    <img src="https://staticbodyshop.gumlet.io/pub/media/weltpixel/owlcarouselslider/images/h/p/hpc_red.jpg"
+                        style="width:100%">
                 </div>
-                <div id="txtDiv">
-                    <h2 style="font-weight: lighter;text-align: center">Join Our Fight To End Period Shame</h2>
-                    <p>Menstruation is a natural bodily function and yet period shame along with lack of access to
-                        menstrual hygiene products and awareness continues to hold back millions. A staggering 88% of
-                        menstruating women in India use unhygienic materials such as ash, dried leaves, old rags and
-                        newspapers to absorb menstrual discharge. We have partnered with CRY - Child Rights and You, a
-                        leading Indian non-profit to bring menstrual products, education and awareness to adolescent
-                        girls and women in slum communities hit by the pandemic. Through #DropThePWord, we are starting
-                        a national conversation around period shame and its adverse effects on the lives of people.
-                        Every donation brings us closer to reach our goal of providing menstrual hygiene products to
-                        10,000+ people across 4,500 households and every pledge brings us closer to winning our fight
-                        against period shame. You can also donate sealed packets of period products in our Red Period
-                        Bins across our all our stores which will be donated to local shelters through CRY.
-                    </p>
-                    <p>Join us online or in-store to support us in this fight..</p>
-                </div>
-            </div>
-            <div id="btnDiv"> <button>FIND OUT MORE</button> </div>
-            <div id="textMainDiv2">
-                <h1>THE BODY SHOP INDIA, ONLINE SHOPPING BODY CARE AND NATURAL BEAUTY!</h1>
-                <p>The Body Shop has been a manufacturer of body and beauty care products for the past Forty one years
-                    and has expanded its wings into the online world. We believe true beauty comes from the heart. For
-                    us, beauty is much more than just a pretty face. The Body Shop products are ready to meet your body
-                    care, toiletries, facials, skincare and hair care needs and are available at www.thebodyshop.in. All
-                    products have natural raw ingredients. We do not use animal products and do any animal testing for
-                    our products. The Body Shop has conducted many campaigns to ban animal testing. The Body Shop
-                    believes that true beauty comes from self-confidence, vitality and positive human thoughts.</p>
-                <h1>NATURAL BEAUTIFUL VIEWS WITH THE PRODUCT CIRCUITS THAT WE OFFER FROM NATURE</h1>
-                <p>The Body Shop believes that something good comes from good intentions. The Body Shop India encourages
-                    employees to learn new skills by funding various training programs, togetherness activities and
-                    health care, we aim to improve the prosperity of our staff. To be a better person the way is simple,
-                    that is by doing good. This is also one of the reasons we have a global policy for all our staff:
-                    spend at least three days per year doing volunteer work. Great people from The Body Shop who are
-                    passionate and tireless have taken this opportunity to make a difference, working with charities
-                    like Food For Life Vrindavan, which helps poor girls for Education , And Children on the Edge, which
-                    supports the rights of children around the world. So, we make a change not only from selling a
-                    variety of care products and cosmetics are 100% natural course. But also through many volunteer
-                    activities useful. Let's spread the love with us!</p>
-                <h1>WE GUARANTEE SAFE AND EASY PAYMENT PROCEDURES HERE!</h1>
-                <p>The Body Shop India also provides secure payment methods that can simplify your shopping
-                    transactions. We provide a transfer payment system with a wide selection of leading banks in India.
-                    We also take Cash on Delivery orders.</p>
-                <hr>
-            </div>
-        </div>
 
-         <!-- footer -->
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">2 / 3</div> -->
+                    <img src="https://staticbodyshop.gumlet.io/pub/media/weltpixel/owlcarouselslider/images/g/i/gifing_hpc__4.jpg"
+                        style="width:100%">
 
-          <!-- social media bar start -->
-        <div id="medcont">
-            <div>
-                <div class="bdiv" style="height:100%;">
-                    <p style="font-family: 'Inter', sans-serif; font-weight:500; font-size:17px;">JOIN US ON SOCIAL</p>
                 </div>
-                <div class="bdiv" id="tdiv">
-                    <img src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/icons/twitter.png" alt="Twitter">
+
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">3 / 3</div> -->
+                    <img src="https://staticbodyshop.gumlet.io/pub/media/weltpixel/owlcarouselslider/images/h/o/homepage_littlelife.jpg"
+                        style="width:100%">
+
                 </div>
-                <div class="bdiv" id="fbdiv">
-                <img src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/facebook-icon.png" alt="fb">
-                </div>
-                <div class="bdiv" id="idiv">
-                    <img src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/instagram-icon.png" alt="Insta">
-                </div>
-                <div class="bdiv" id="ytdiv">
-                <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/yt_logo_mono_light-new.png" alt="yt">
-                </div>
-                <div class="bdiv" id="inpdiv">
-                    <div style="width:90%">   
-                        <input id="sinp" type="email" placeholder="SIGN UP FOR OUR EXCLUSIVE OFFERS">  
-                        <div id="inftxt"></div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+
+            <!-- Grid code start hare -->
+            <div class="grid-card">
+
+                <a href="product.html"><img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/50_.jpg"
+                        alt=""></a>
+
+                <a href="product.html"><img
+                        src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Give_joy.jpg" alt=""></a>
+
+
+                <a href="product.html"><img
+                        src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Vitamin_C.jpg" alt=""></a>
+
+                <a href="product.html"><img
+                        src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/HDFC_latest.jpg" alt=""></a>
+
+                <a href="product.html"><img
+                        src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Gift_card_2.jpg" alt=""></a>
+
+                <a href="product.html"><img
+                        src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Sheet_Mask_2_3.jpg" alt=""></a>
+
+            </div>
+            <!-- sliding product part will be added below bu the aditya -->
+
+            <!-- Aditya pest you products sliding part code hare -->
+            <div id="main">
+                <h1 id="slidehead">NEW IN</h1>
+                <div id="container1">
+                    <div id="hig" class="owl-carousel owl-theme container1">
+                        <div class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1012282_FACE-WASH-LEMON-125ML-LH_BRNZ_INAAUPS676_-_Copy.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Lemon Purifying
+                                Face Wash</h5>
+                            <div class="price-box price-final_price mar5"><span class="price">₹945.00</span></div>
+                            <button id="bt1">View</button>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1012250_HAIR_BODY_WASH_LEMON_400ML_LH_BRNZ_INECMPS417.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Lemon Purifying
+                                Hair &amp; Body Wash</h5>
+                            <div class="price-box price-final_price mar5"><span class="price">₹1195.00</span></div>
+
+                            <button id="bt1">View</button>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1012280_HAND_BODY_LOTION_LEMON_200ML_A0X_BRNZ_INECMPS424_-_Copy.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Lemon Protecting
+                                Hand &amp; Body Lotion</h5>
+                            <div class="price-box price-final_price mar5"><span class="price">₹1195.00</span></div>
+                            <button id="bt1">View</button>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1010158_Himalayan_Charcoal_Sleeping_Serum_30ml_AOX_BRNZ_INECOPS038.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Himalayan
+                                Charcoal Skin Clarifying Night Peel</h5>
+                            <div class="price-box price-final_price mar5"><span class="price">₹2095.00</span></div>
+                            <button id="bt1">View</button>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1098645_BODY_YOGURT_COOL_DAISY_200ML_A0X_BRNZ_INECOPS228.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Cool Daisy Body
+                                Yogurt</h5>
+                            <div class="price-box price-final_price mar5"><span class="price">₹995.00</span></div>
+                            <button id="bt1">View</button>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1010039_Lip_and_Cheek_Stain_Sunshine_orange_BRNZ_INECMPS388.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Lip &amp; Cheek
+                                Stain Sunshine Orange</h5>
+                            <div class="price-box price-final_price mar5"><span class="price">₹995.00</span></div>
+                            <button id="bt1">View</button>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1098462_BODY_MIST_FRESH_RASPBERRY_100ML_A0X_BRNZ_INECOPS231.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Fresh Raspberry
+                                Hydrating Body Mist</h5>
+                            <div class="price-box price-final_price mar5"><span class="price">₹1345.00</span></div>
+
+                            <button id="bt1">View</button>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1098646_BODY_MIST_COOL_DAISY_100ML_A0X_BRNZ_INECOPS227.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 class="product name col-sm-12 text-center interstate-bold-cond font16">Cool Daisy
+                                Hydrating Body Mist</h5>
+                            <div class="price-box price-final_price mar5"><span class="price">₹1345.00</span></div>
+
+                            <button id="bt1">View</button>
+                        </div>
+
                     </div>
-                    <div style="width:8%; text-align:center;line-height:50px;">
-                        <i class="fas fa-chevron-right"></i>
+                    <!--WISHLIST HEART STARTINGF FROM HERE  -->
+
+                    <h1 id="slideh2">PERSONALIZED FOR YOU</h1>
+
+                    <div class="owl-carousel owl-theme container1">
+                        <div id="inc" class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://dev2m23.thebodyshop.in/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1088765_1_all_mine_mist_100ml_brnz_incrhps314.jpeg"
+                                    alt="">
+                            </a>
+                            <h5 i class="productnm"> All Mine Fragrance Mist </h5>
+                            <div class="price-bx price-final_price mar5"><span id="ic" class="price">₹1,445.00</span>
+                            </div>
+                            <div class="clk"><i class=" far fa-heart fa-lg"></i></div>
+
+
+
+
+                        </div>
+
+                        <div id="inc" class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/v/a/vanilla_eau_de_toilette_30ml.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 i class="productnm"> Vanilla Eau De Toilette </h5>
+
+                            <div class="price-bx price-final_price mar5"><span class="price">₹1,045.00</span></div>
+                            <div class="clk"><i class=" far fa-heart fa-lg"></i></div>
+
+                        </div>
+                        <div id="inc" class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/v/i/vitamin_e_moisture-protect_lip_care_spf_15_42g_1_inrslps688_1_.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 i class="productnm"> Vitamin E Lip Care SPF 15 </h5>
+
+                            <div class="price-bx price-final_price mar5"><span class="price">₹395.00</span></div>
+                            <div class="clk"><i class=" far fa-heart fa-lg"></i></div>
+
+                        </div>
+                        <div id="inc" class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-30176001-1.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 i class="productnm"> Vitamin C Daily Glow Cleansing Polish </h5>
+                            <div class="price-bx price-final_price mar5"><span class="price">₹1295.00</span></div>
+                            <div class="clk"><i class=" far fa-heart fa-lg"></i></div>
+                        </div>
+                        <div id="inc" class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1059520_1_my_pick_mist_100ml_brnz_incrhps326.jpeg"
+                                    alt="">
+
+                            </a>
+                            <h5 i class="productnm"> Spritz My Pick Fragrance Mist </h5>
+                            <div class="price-bx price-final_price mar5"><span class="price">₹1445.00</span></div>
+                            <div class="clk"><i class=" far fa-heart fa-lg"></i></div>
+                        </div>
+                        <div id="inc" class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1047466_2_cleansing_foam_dol_125ml_silv_pck_inbosps371.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 i class="productnm"> Drops Of Light Brightening Cleansing Foam </h5>
+                            <div class="price-bx price-final_price mar5"><span class="price">₹1695.00</span></div>
+                            <div class="clk"><i class=" far fa-heart fa-lg"></i></div>
+                        </div>
+                        <div id="inc" class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/b/s/bs-20014001-1.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 i class="productnm">Seaweed Cleansing Facial Wash </h5>
+                            <a class="product-item-link"
+                                href="https://www.thebodyshop.in/spritz-my-pick-fragrance-mist.html"> </a>
+                            <div class="price-bx price-final_price mar5"><span class="price">₹945.00</span></div>
+
+                            <div class="clk"><i class=" far fa-heart fa-lg"></i></div>
+                        </div>
+                        <div id="inc" class="item">
+                            <a href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+                                <img class="img"
+                                    src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1098649_fra_mist_let_s_bloom_100ml_a36_brnz_inecmps137.jpg"
+                                    alt="">
+
+                            </a>
+                            <h5 i class="productnm"> Let's Bloom Spritz Body Mist </h5>
+                            <div class="price-bx price-final_price mar5"><span class="price">₹1545.00</span></div>
+
+                            <div class="clk"><i class=" far fa-heart fa-lg"></i></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- Script for Slider -->
+
+            <script>
+
+                var prev = '<img src="https://thebodyshop.in/media/wysiwyg/icons/left.png">'
+                var next = '<img src="https://thebodyshop.in/media/wysiwyg/icons/right.png">'
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    navText: [
+                        prev,
+                        next
+                    ],
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 4
+                        }
+                    }
+                })
+
+                $('.clk ').click(function () {
+                    $(this).find('i').toggleClass('far fa-heart fas fa-heart')
+                });
+
+            </script>
+            <!-- Script for Slider Ends -->
+
+
+
+            <!-- After item slider and above the footer part is started hare by Srisha -->
+            <div id="textMainDiv">
+                <h1>COME TOGETHER ACT TOGETHER</h1>
+                <div id="imgTxtDiv">
+                    <div id="imgDiv">
+                        <img style="width:100%;"
+                            src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/Charity_Partner_Tile.jpg" />
+                    </div>
+                    <div id="txtDiv">
+                        <h2 style="font-weight: lighter;text-align: center">Join Our Fight To End Period Shame</h2>
+                        <p>Menstruation is a natural bodily function and yet period shame along with lack of access to
+                            menstrual hygiene products and awareness continues to hold back millions. A staggering 88%
+                            of
+                            menstruating women in India use unhygienic materials such as ash, dried leaves, old rags and
+                            newspapers to absorb menstrual discharge. We have partnered with CRY - Child Rights and You,
+                            a
+                            leading Indian non-profit to bring menstrual products, education and awareness to adolescent
+                            girls and women in slum communities hit by the pandemic. Through #DropThePWord, we are
+                            starting
+                            a national conversation around period shame and its adverse effects on the lives of people.
+                            Every donation brings us closer to reach our goal of providing menstrual hygiene products to
+                            10,000+ people across 4,500 households and every pledge brings us closer to winning our
+                            fight
+                            against period shame. You can also donate sealed packets of period products in our Red
+                            Period
+                            Bins across our all our stores which will be donated to local shelters through CRY.
+                        </p>
+                        <p>Join us online or in-store to support us in this fight..</p>
                     </div>
                 </div>
+                <div id="btnDiv"> <button>FIND OUT MORE</button> </div>
+                <div id="textMainDiv2">
+                    <h1>THE BODY SHOP INDIA, ONLINE SHOPPING BODY CARE AND NATURAL BEAUTY!</h1>
+                    <p>The Body Shop has been a manufacturer of body and beauty care products for the past Forty one
+                        years
+                        and has expanded its wings into the online world. We believe true beauty comes from the heart.
+                        For
+                        us, beauty is much more than just a pretty face. The Body Shop products are ready to meet your
+                        body
+                        care, toiletries, facials, skincare and hair care needs and are available at www.thebodyshop.in.
+                        All
+                        products have natural raw ingredients. We do not use animal products and do any animal testing
+                        for
+                        our products. The Body Shop has conducted many campaigns to ban animal testing. The Body Shop
+                        believes that true beauty comes from self-confidence, vitality and positive human thoughts.</p>
+                    <h1>NATURAL BEAUTIFUL VIEWS WITH THE PRODUCT CIRCUITS THAT WE OFFER FROM NATURE</h1>
+                    <p>The Body Shop believes that something good comes from good intentions. The Body Shop India
+                        encourages
+                        employees to learn new skills by funding various training programs, togetherness activities and
+                        health care, we aim to improve the prosperity of our staff. To be a better person the way is
+                        simple,
+                        that is by doing good. This is also one of the reasons we have a global policy for all our
+                        staff:
+                        spend at least three days per year doing volunteer work. Great people from The Body Shop who are
+                        passionate and tireless have taken this opportunity to make a difference, working with charities
+                        like Food For Life Vrindavan, which helps poor girls for Education , And Children on the Edge,
+                        which
+                        supports the rights of children around the world. So, we make a change not only from selling a
+                        variety of care products and cosmetics are 100% natural course. But also through many volunteer
+                        activities useful. Let's spread the love with us!</p>
+                    <h1>WE GUARANTEE SAFE AND EASY PAYMENT PROCEDURES HERE!</h1>
+                    <p>The Body Shop India also provides secure payment methods that can simplify your shopping
+                        transactions. We provide a transfer payment system with a wide selection of leading banks in
+                        India.
+                        We also take Cash on Delivery orders.</p>
+                    <hr>
+                </div>
             </div>
-        </div>
-        
-        <!-- href section -->
-        <div id=hrfdiv>
-            <div >
-                <h4 class="h4" style="margin-left: 38px;">LOVE YOUR BODY CLUB</h4>
-                <ul id="ul1">
-                    <li class="liAll">FAQs</li>
-                    <li class="liAll">Loyalty Club</li>
-                </ul>
-            </div>
-            <div id="col2">
-                <h4 class="h4" style="margin-left: 38px;">ABOUT US</h4>
-                <ul id="ul2">
-                    <li class="liAll">About Us</li>
-                    <li class="liAll">Affiliates</li>
-                    <li class="liAll">Careers</li>
-                    <li class="liAll">Dame Anita Roddick</li>
-                    <li class="liAll">Contact Us</li>
-                </ul>
-            </div>
-            <div id="col3">
-                <h4 class="h4" style="margin-left: 38px;">USING THE WEBSITE</h4>
-                <ul id="ul3">
-                    <li class="liAll">Terms & Conditions</li>
-                    <li class="liAll">Privacy Policy</li>
-                    <li class="liAll">Policy Documentation</li>
-                    <li class="liAll">Packaging & Delivery FAQ's</li>
-                    <li class="liAll">Sitemap</li>
-                    <li class="liAll">FAQ Services</li>
-                </ul>
-            </div>
-            <div id="col4">
-                <h4 class="h4" style="margin-left: 38px;">COMMITMENT</h4>
-                <ul id="ul4">
-                    <li class="liAll">Community Trade</li>
-                    <li class="liAll">Ethical Trade</li>
-                    <li class="liAll">Campaigns</li>
-                    <li class="liAll">Our Commitment</li>
-                </ul>
-            </div>
-        </div>
 
-        <!-- copyright 1 -->
-        <div class=info>
-            <p>
-                © 2021  THE BODY SHOP INTERNATIONAL LIMITED
-            </p>
-        </div>
-        <div class=info style="margin-left:630px;">
-            <select id="select1" onchange="redirect()">
-                <option value="India">India</option>
-                <option value="Australia">Australia</option>
-                <option value="Austria">Austria</option>
-                <option value="Belgium">Belgium/Belgique</option>
-                <option value="Canada">Canada</option>
-                <option value="Danmark/Denmark">Danmark/Denmark</option>
-                <option value="Deutschland/Germany">Deutschland/Germany</option>
-                <option value="España/Spain">España/Spain</option>
-                <option value="Estonia">Estonia</option>
-                <option value="France">France</option>
-                <option value="Global">Global</option>
-                <option value="Hong Kong">Hong Kong</option>
-                <option value="Hungary">Hungary</option>
-                <option value="Indonesia">Indonesia</option>
-                <option value="Italy">Italy</option>
-                <option value="Japan">Japan</option>
-                <option value="Korea">Korea</option>
-                <option value="Latvia">Latvia</option>
-                <option value="Lithuania">Lithuania</option>
-                <option value="Malaysia">Malaysia</option>
-                <option value="Netherlands">Netherlands</option>
-                <option value="Norway">Norway</option>
-                <option value="Philippines">Philippines</option>
-                <option value="Romania">Romania</option>
-                <option value="Russia">Russia</option>
-                <option value="Suisse/Switzerland">Suisse/Switzerland</option>
-                <option value="Singapore">Singapore</option>
-                <option value="South Africa">South Africa</option>
-                <option value="Suomi/Finland">Suomi/Finland</option>
-                <option value="Sverige/Sweden">Sverige/Sweden</option>
-                <option value="Taiwan">Taiwan</option>
-                <option value="Thailand">Thailand</option>
-                <option value="Türkiye/Turkey">Türkiye/Turkey</option>
-                <option value="UK">UK</option>
-                <option value="USA">USA</option>
-                <option value="Vietnam">Vietnam</option>
-            </select>
-            <div id="drpdiv"></div>
-        </div>
+            <!-- footer -->
 
-        <!-- privacy policy -->
-        <div  style="margin-top:20px;">
-            <div id=linfo1>
-                <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED ALL RIGHTS RESERVED.</p>
-                <p>REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED IN ENGLAND NO. 1284170</p>
+            <!-- social media bar start -->
+            <div id="medcont">
+                <div>
+                    <div class="bdiv" style="height:100%;">
+                        <p style="font-family: 'Inter', sans-serif; font-weight:500; font-size:17px;">JOIN US ON SOCIAL
+                        </p>
+                    </div>
+                    <div class="bdiv" id="tdiv">
+                        <img src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/icons/twitter.png"
+                            alt="Twitter">
+                    </div>
+                    <div class="bdiv" id="fbdiv">
+                        <img src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/facebook-icon.png"
+                            alt="fb">
+                    </div>
+                    <div class="bdiv" id="idiv">
+                        <img src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/instagram-icon.png"
+                            alt="Insta">
+                    </div>
+                    <div class="bdiv" id="ytdiv">
+                        <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/yt_logo_mono_light-new.png"
+                            alt="yt">
+                    </div>
+                    <div class="bdiv" id="inpdiv">
+                        <div style="width:90%">
+                            <input id="sinp" type="email" placeholder="SIGN UP FOR OUR EXCLUSIVE OFFERS">
+                            <div id="inftxt"></div>
+                        </div>
+                        <div style="width:8%; text-align:center;line-height:50px;">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="linfo" style="float:right; width:25%;">
-                <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png" width="100%">
+
+            <!-- href section -->
+            <div id=hrfdiv>
+                <div>
+                    <h4 class="h4" style="margin-left: 38px;">LOVE YOUR BODY CLUB</h4>
+                    <ul id="ul1">
+                        <li class="liAll">FAQs</li>
+                        <li class="liAll">Loyalty Club</li>
+                    </ul>
+                </div>
+                <div id="col2">
+                    <h4 class="h4" style="margin-left: 38px;">ABOUT US</h4>
+                    <ul id="ul2">
+                        <li class="liAll">About Us</li>
+                        <li class="liAll">Affiliates</li>
+                        <li class="liAll">Careers</li>
+                        <li class="liAll">Dame Anita Roddick</li>
+                        <li class="liAll">Contact Us</li>
+                    </ul>
+                </div>
+                <div id="col3">
+                    <h4 class="h4" style="margin-left: 38px;">USING THE WEBSITE</h4>
+                    <ul id="ul3">
+                        <li class="liAll">Terms & Conditions</li>
+                        <li class="liAll">Privacy Policy</li>
+                        <li class="liAll">Policy Documentation</li>
+                        <li class="liAll">Packaging & Delivery FAQ's</li>
+                        <li class="liAll">Sitemap</li>
+                        <li class="liAll">FAQ Services</li>
+                    </ul>
+                </div>
+                <div id="col4">
+                    <h4 class="h4" style="margin-left: 38px;">COMMITMENT</h4>
+                    <ul id="ul4">
+                        <li class="liAll">Community Trade</li>
+                        <li class="liAll">Ethical Trade</li>
+                        <li class="liAll">Campaigns</li>
+                        <li class="liAll">Our Commitment</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- copyright 1 -->
+            <div class=info>
+                <p>
+                    © 2021 THE BODY SHOP INTERNATIONAL LIMITED
+                </p>
+            </div>
+            <div class=info style="margin-left:630px;">
+                <select id="select1" onchange="redirect()">
+                    <option value="India">India</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Belgium">Belgium/Belgique</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Danmark/Denmark">Danmark/Denmark</option>
+                    <option value="Deutschland/Germany">Deutschland/Germany</option>
+                    <option value="España/Spain">España/Spain</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="France">France</option>
+                    <option value="Global">Global</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Korea">Korea</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Suisse/Switzerland">Suisse/Switzerland</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Suomi/Finland">Suomi/Finland</option>
+                    <option value="Sverige/Sweden">Sverige/Sweden</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Türkiye/Turkey">Türkiye/Turkey</option>
+                    <option value="UK">UK</option>
+                    <option value="USA">USA</option>
+                    <option value="Vietnam">Vietnam</option>
+                </select>
+                <div id="drpdiv"></div>
+            </div>
+
+            <!-- privacy policy -->
+            <div style="margin-top:20px;">
+                <div id=linfo1>
+                    <p>® A REGISTERED TRADEMARK OF THE BODY SHOP INTERNATIONAL LIMITED™ A TRADEMARK OF THE BODY SHOP
+                        INTERNATIONAL LIMITED ALL RIGHTS RESERVED.</p>
+                    <p>REGISTERED OFFICE: WATERSMEAD, LITTLEHAMPTON, WEST SUSSEX, BN17 6LS, UNITED KINGDOM; REGISTERED
+                        IN ENGLAND NO. 1284170</p>
+                </div>
+                <div id="linfo" style="float:right; width:25%;">
+                    <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/icons/payment_icons.png" width="100%">
+                </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
@@ -672,103 +799,103 @@
 
     document.querySelector("i").addEventListener("click", inpCheck);
 
-// email checker function
-function inpCheck() {
-    var a=document.querySelector("#sinp").value;
-    if(a==""){
-        document.querySelector("#inftxt").textContent="This is a required field.";
-    } else {
-        emailCheck(a);
+    // email checker function
+    function inpCheck() {
+        var a = document.querySelector("#sinp").value;
+        if (a == "") {
+            document.querySelector("#inftxt").textContent = "This is a required field.";
+        } else {
+            emailCheck(a);
+        }
     }
-}
 
-function emailCheck(line) {
-var name="";
-var std="abcdefghijklmnopqrstuvwxyz1234567890_-.";
-var std1="abcdefghijklmnopqrstuvwxyz@";
-var domain="";
-var tld="";
-var ind=0;
-var ind1=0;
-var ind2=0;
-var check1=true;
-var check2=true;
-var check3=false;
+    function emailCheck(line) {
+        var name = "";
+        var std = "abcdefghijklmnopqrstuvwxyz1234567890_-.";
+        var std1 = "abcdefghijklmnopqrstuvwxyz@";
+        var domain = "";
+        var tld = "";
+        var ind = 0;
+        var ind1 = 0;
+        var ind2 = 0;
+        var check1 = true;
+        var check2 = true;
+        var check3 = false;
 
-for(var i=0;i<line.length;i++) {
-  if(line[i]=="@") {
-    break;
-  } else {
-    name=name+line[i];
-    ind++;
-  }
-}
+        for (var i = 0; i < line.length; i++) {
+            if (line[i] == "@") {
+                break;
+            } else {
+                name = name + line[i];
+                ind++;
+            }
+        }
 
-var nm1="";
-if(name!="") {
-  for(var a=0;a<name.length;a++) {
-    for(var b=0;b<std.length;b++) {
-      if(name[a]==std[b]) {
-        nm1=nm1+name[a];
-      }
+        var nm1 = "";
+        if (name != "") {
+            for (var a = 0; a < name.length; a++) {
+                for (var b = 0; b < std.length; b++) {
+                    if (name[a] == std[b]) {
+                        nm1 = nm1 + name[a];
+                    }
+                }
+            }
+        }
+
+        if (nm1 != name) {
+            check1 = false;
+        }
+
+
+
+        for (var j = ind; j < line.length; j++) {
+            if (line[j] == ".") {
+                break;
+            } else {
+                domain = domain + line[j];
+                ind1++;
+            }
+        }
+
+        var dm1 = "";
+        if (domain != "") {
+            for (var a = 0; a < domain.length; a++) {
+                for (var b = 0; b < std1.length; b++) {
+                    if (domain[a] == std1[b]) {
+                        dm1 = dm1 + domain[a];
+                    }
+                }
+            }
+        }
+        if ((dm1 == "@") || (dm1 != domain)) {
+            check2 = false;
+        }
+
+
+        for (var k = ind1 + ind; k < line.length; k++) {
+            tld = tld + line[k];
+        }
+
+        if ((tld == ".com") || (tld == ".net") || (tld == ".org")) {
+            check3 = true;
+        }
+        var checker = "";
+        if ((check1 == true) && (check2 == true) && (check3 == true)) {
+        } else {
+            checker = "Please enter a valid email address (Ex: johndoe@domain.com).";
+        }
+        document.querySelector("#inftxt").textContent = checker;
     }
-  }
-}
 
-if(nm1!=name) {
-  check1=false;
-}
-
-
-
-for(var j=ind;j<line.length;j++) {
-  if(line[j]==".") {
-    break;
-  } else {
-    domain=domain+line[j];
-    ind1++;
-  }
-}
-
-var dm1="";
-if(domain!="") {
-  for(var a=0;a<domain.length;a++) {
-    for(var b=0;b<std1.length;b++) {
-      if(domain[a]==std1[b]) {
-        dm1=dm1+domain[a];
-      }
+    //   select function
+    function redirect() {
+        var s = document.querySelector("select").value;
+        console.log(s);
+        if (s != "India") {
+            document.querySelector("#drpdiv").textContent = "Currently not available";
+        } else {
+            document.querySelector("#drpdiv").textContent = "";
+        }
     }
-  }
-}
-if((dm1=="@")||(dm1!=domain)) {
-  check2=false;
-}
-
-
-for(var k=ind1+ind;k<line.length;k++) {
-  tld=tld+line[k];
-}
-
-if((tld==".com")||(tld==".net")||(tld==".org")) {
-  check3=true;
-}
-var checker="";
-if((check1==true)&&(check2==true)&&(check3==true)) {
-} else {
-  checker="Please enter a valid email address (Ex: johndoe@domain.com).";
-}
-document.querySelector("#inftxt").textContent=checker;
-}
-
-//   select function
-function redirect(){
-   var s=document.querySelector("select").value;
-    console.log(s);
-    if(s!="India"){
-        document.querySelector("#drpdiv").textContent="Currently not available";
-    } else{
-        document.querySelector("#drpdiv").textContent="";
-    }
-}
 </script>
 <!-- script for grid item -->

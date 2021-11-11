@@ -71,6 +71,7 @@
         .mid-header {
             display: flex;
             justify-content: center;
+            cursor: pointer;
         }
 
         .mid-header>img {
@@ -298,6 +299,15 @@
         <div class="prod-container">
             <div class="productview">
                 <!-- to display obout products -->
+                <div id="largImg" class="largImg">
+                    <img src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/48a7f187895307a50824afe4b30d07f7/1/0/1015229_2_new.jpg" alt="">
+                    <p id="imgname">Lemon Purifying Hair & Body Wash</>
+                </div>
+                <div  class="moreImg">
+                    <img id="img1" src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/48a7f187895307a50824afe4b30d07f7/1/0/1015229_2_new.jpg" alt="">
+                    <img id="img2" src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/48a7f187895307a50824afe4b30d07f7/4/_/4_edited_1.jpg" alt="">
+                    <img id="img3" src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/48a7f187895307a50824afe4b30d07f7/4/_/4_edited_1.jpg" alt="">
+                </div>
 
 
 
@@ -384,6 +394,11 @@
 
 </html>
 <script>
+document.getElementsByClassName("mid-header")[0].addEventListener("click",function(){
+    window.location.href = "index.html"
+})
+
+
     var item_qty=1;
     document.getElementById("dec").addEventListener("click", dec)
     document.getElementById("inc").addEventListener("click", inc)
@@ -401,5 +416,13 @@ function dec(){
     }   
 }
 
+// product view window code  
+document.querySelector("#img1").addEventListener("click",function(){
+    document.querySelector("#largImg>img").setAttribute("src","https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/48a7f187895307a50824afe4b30d07f7/1/0/1015229_2_new.jpg")
+    console.log("hellok")
+})
+document.querySelector("#img2").addEventListener("click",function(){
+    document.querySelector("#largImg>img").setAttribute("src","https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/48a7f187895307a50824afe4b30d07f7/4/_/4_edited_1.jpg")
+})
     
-</script>
+</script>   
