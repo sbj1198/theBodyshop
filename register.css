@@ -78,7 +78,7 @@ fieldset{
 }
 
 input[type=email]{
-    border: 1px solid gray;
+    border: 1px solid white;
     border-radius: 3px;
     box-sizing: border-box;
     color: #7d7d7d;
@@ -89,7 +89,7 @@ input[type=email]{
     font-style: normal;
     font-weight: 400;
     vertical-align: baseline;
-    background:rgb(199, 198, 198);
+    background:rgb(236, 235, 235);
 }
 input[type=password]{
     border: 1px solid gray;
