@@ -287,7 +287,7 @@ img {vertical-align: middle;}
 }
 
 
-/* srisha css code for footer section start hare */
+/*footer section start hare */
 #textMainDiv{
   width:100%;
   /* height: 500px; */
@@ -488,13 +488,13 @@ margin: auto;
   margin: 10px;
   margin-bottom: 20px;
 }
-.owl-nav {
+/* .owl-nav {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-}
+} */
 .owl-prev {
   position: absolute;
   left: 0;
@@ -579,4 +579,61 @@ h1 {
 }
 .fa-lg{
   margin-left: 10%;
+}
+.item{
+  display: inline-block;
+  margin: auto;
+} 
+.back, .front{
+  position: relative;
+  top: 250px;
+}
+#inc>a>img{
+  width: 20vw;
+  margin: auto;
+  height:35vh;
+}
+.owl-carousel2, .owlcarousel{
+display:grid;
+gap:1vw;
+grid-template-columns: auto auto auto auto;
+grid-template-rows: 500px;
+/* border:solid red 1px; */
+width:90%;
+overflow:hidden;
+margin: auto;
+height:500px;
+vertical-align:top;
+}
+.productnm>h5{
+  justify-content: center;
+  margin-bottom: 0px;
+}
+#inc>h3{
+  font-size: 15px;
+  text-align: center;
+  margin-top:0px;
+  padding-top: 0px;
+}
+.clk{
+  width: 3vw;
+  align-items: center;
+  margin-left: 40%;
+  cursor: pointer;
+}
+
+/* new one slider css */
+.back1, .front1{
+  position: relative;
+  top: 250px;
+}
+.view{
+  width: 4vw;
+  align-items: center;
+  margin-left: 40%;
+  cursor: pointer;
+}
+.view:hover{
+  background-color:black;
+  color:white;
 }

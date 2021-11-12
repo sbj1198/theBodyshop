@@ -418,8 +418,9 @@ function dec(){
 
 // product view window code  
 document.querySelector("#img1").addEventListener("click",function(){
-    document.querySelector("#largImg>img").setAttribute("src","https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/48a7f187895307a50824afe4b30d07f7/1/0/1015229_2_new.jpg")
-    console.log("hellok")
+    var viewItem=JSON.parse(localStorage.getItem("viewItem"));
+
+    document.querySelector("#largImg>img").src=viewItem.imgtag;
 })
 document.querySelector("#img2").addEventListener("click",function(){
     document.querySelector("#largImg>img").setAttribute("src","https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/48a7f187895307a50824afe4b30d07f7/4/_/4_edited_1.jpg")
