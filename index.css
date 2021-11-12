@@ -597,12 +597,12 @@ h1 {
 display:grid;
 gap:1vw;
 grid-template-columns: auto auto auto auto;
-grid-template-rows: 500px;
+grid-template-rows: 480px;
 /* border:solid red 1px; */
 width:90%;
 overflow:hidden;
 margin: auto;
-height:500px;
+height:510px;
 vertical-align:top;
 }
 .productnm>h5{
