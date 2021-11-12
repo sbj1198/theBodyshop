@@ -320,6 +320,7 @@ var viewBox=0;
 function view(item) {
     viewBox=item;
     localStorage.setItem('viewItem',JSON.stringify(viewBox));
+    window.location.href="productView.html"
 }
 
 function backMove() {
