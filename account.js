@@ -3,6 +3,7 @@ document.getElementById("next").addEventListener("click", accountCheck);
 var acc = JSON.parse(localStorage.getItem("accDetails")) || [];
 function accountCheck() {
     var x = document.getElementById("email").value;
+    localStorage.setItem("tempMail", x);
     var pattern = /^[6-9]\d{9}$/;
     var pattern2 = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 

@@ -1,3 +1,39 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    cursor: pointer;
+    display: flex;
+    height: 55px;
+    background: black;
+    align-items: center;
+}
+
+.left>a {
+    font-size: 16px;
+    color: white;
+    margin-left: 30px;
+    font-weight: 500;
+
+}
+
+.midpart {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 25%;
+}
+
+.midpart>a {
+    color: white;
+}
+
+.midpart>a>span {
+    font-size: 12px;
+}
 div{
     display: block;
 }
@@ -42,8 +78,8 @@ fieldset{
 }
 
 input[type=email]{
-    border: 1px solid #e1e1e1;
-    border-radius: 1px;
+    border: 1px solid gray;
+    border-radius: 3px;
     box-sizing: border-box;
     color: #7d7d7d;
     font-size: 16px;
@@ -53,10 +89,11 @@ input[type=email]{
     font-style: normal;
     font-weight: 400;
     vertical-align: baseline;
+    background:rgb(199, 198, 198);
 }
 input[type=password]{
-    border: 1px solid #e1e1e1;
-    border-radius: 1px;
+    border: 1px solid gray;
+    border-radius: 3px;
     box-sizing: border-box;
     font-size: 16px;
     height: 40px;
@@ -67,8 +104,8 @@ input[type=password]{
     vertical-align: baseline;
 }
 input[type=text]{
-    border: 1px solid #e1e1e1;
-    border-radius: 1px;
+    border: 1px solid gray;
+    border-radius: 3px;
     box-sizing: border-box;
     color: #7d7d7d;
     font-size: 16px;
@@ -103,8 +140,8 @@ option{
     font-weight: normal;
 }
 select{
-    border: 1px solid #e1e1e1;
-    border-radius: 1px;
+    border: 1px solid gray;
+    border-radius: 3px;
     box-sizing: border-box;
     font-size: 16px;
     height: 40px;
@@ -152,3 +189,39 @@ meter[value="1"]::-moz-meter-bar{background: red;}
 meter[value="2"]::-moz-meter-bar{background: yellow;}
 meter[value="3"]::-moz-meter-bar{background: orange;}
 meter[value="4"]::-moz-meter-bar{background: green;}
+
+/* //payment logo css */
+.paymentlogo>ul {
+    margin-top: 2%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247,247,247);
+    width: 96%;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paymentlogo>ul>li {
+    margin: 5px;
+}
+
+.paymentlogo>p {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 3px;
+    color: black;
+}
+
+.paymentNote {
+    font-size: 16px;
+    color: black;
+}
+.paymentlogo{
+    text-align: center;
+}
+#email_address{
+    color: black;
+}
