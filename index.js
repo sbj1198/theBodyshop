@@ -37,7 +37,7 @@ const back = document.querySelector('.back');
         {
             atag: "https://www.thebodyshop.in/lemon-purifying-face-wash.html",
             imgtag: "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1012282_FACE-WASH-LEMON-125ML-LH_BRNZ_INAAUPS676_-_Copy.jpg",
-            titletag: "Lemon Purifying Face Wash",
+            titletag: "Lemon Purifying Face Wash Small Size",
             pricetag: "₹945.00"
         },
         {
@@ -61,13 +61,13 @@ const back = document.querySelector('.back');
         {
             atag: "https://www.thebodyshop.in/lemon-purifying-face-wash.html",
             imgtag: "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1098645_BODY_YOGURT_COOL_DAISY_200ML_A0X_BRNZ_INECOPS228.jpg",
-            titletag: "Cool Daisy Body Yogurt",
+            titletag: "Cool Daisy Body Care with Yogurt Lotion ",
             pricetag: "995.00"
         },
         {
             atag: "https://www.thebodyshop.in/lemon-purifying-face-wash.html",
             imgtag: "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1010039_Lip_and_Cheek_Stain_Sunshine_orange_BRNZ_INECMPS388.jpg",
-            titletag: "Cheek Stain Sunshine Orange",
+            titletag: "Cheek Stain Sunshine Orange Cream",
             pricetag: "₹995.00"
         },
         {
@@ -80,7 +80,7 @@ const back = document.querySelector('.back');
         {
             atag: "https://www.thebodyshop.in/lemon-purifying-face-wash.html",
             imgtag: "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1098646_BODY_MIST_COOL_DAISY_100ML_A0X_BRNZ_INECOPS227.jpg",
-            titletag: "Cool Daisy Hydrating Body Mist",
+            titletag: "Cool Daisy Hydrating Body Mist Lotion",
             pricetag: "₹1345.00"
         }
 
@@ -199,14 +199,14 @@ var newdata = [
     {
         atag: "https://www.thebodyshop.in/lemon-purifying-face-wash.html",
         imgtag: "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1012282_FACE-WASH-LEMON-125ML-LH_BRNZ_INAAUPS676_-_Copy.jpg",
-        titletag: "Lemon Purifying Face Wash",
-        pricetag: "₹1,945.00"
+        titletag: "Lemon Purifying Face Wash Small Size",
+        pricetag: "₹945.00"
     },
     {
         atag: "https://www.thebodyshop.in/lemon-purifying-face-wash.html",
         imgtag: "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1012250_HAIR_BODY_WASH_LEMON_400ML_LH_BRNZ_INECMPS417.jpg",
         titletag: "Lemon Purifying Hair &amp; Body Wash",
-        pricetag: "₹1,295.00"
+        pricetag: "₹1,195.00"
     },
     {
         atag: "https://www.thebodyshop.in/lemon-purifying-face-wash.html",
@@ -223,13 +223,13 @@ var newdata = [
     {
         atag: "https://www.thebodyshop.in/lemon-purifying-face-wash.html",
         imgtag: "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1098645_BODY_YOGURT_COOL_DAISY_200ML_A0X_BRNZ_INECOPS228.jpg",
-        titletag: "Cool Daisy Body Yogurt",
+        titletag: "Cool Daisy Body Care with Yogurt Lotion ",
         pricetag: "995.00"
     },
     {
         atag: "https://www.thebodyshop.in/lemon-purifying-face-wash.html",
         imgtag: "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1010039_Lip_and_Cheek_Stain_Sunshine_orange_BRNZ_INECMPS388.jpg",
-        titletag: "Cheek Stain Sunshine Orange",
+        titletag: "Cheek Stain Sunshine Orange Cream",
         pricetag: "₹995.00"
     },
     {
@@ -242,7 +242,7 @@ var newdata = [
     {
         atag: "https://www.thebodyshop.in/lemon-purifying-face-wash.html",
         imgtag: "https://staticbodyshop.gumlet.io/pub/media/wysiwyg/Homepage/1098646_BODY_MIST_COOL_DAISY_100ML_A0X_BRNZ_INECOPS227.jpg",
-        titletag: "Cool Daisy Hydrating Body Mist",
+        titletag: "Cool Daisy Hydrating Body Mist Lotion",
         pricetag: "₹1345.00"
     }
 

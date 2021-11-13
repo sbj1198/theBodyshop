@@ -592,6 +592,8 @@ h1 {
   width: 20vw;
   margin: auto;
   height:35vh;
+  position: relative;
+  right: 50px;
 }
 .owl-carousel2, .owlcarousel{
 display:grid;
