@@ -44,11 +44,11 @@
     <div id="cont2">
         <div id="c2div1"><h3>Order Summery</h3></div>
         
-        <div id="c2div2">Cart Subtotal:--------------------------------</div>
+        <div id="c2div2">Cart Subtotal:-----------------------------</div>
         <div id="c2div3"></div>
         
-        <div id="c2div4">Shipping Charges:----------------------------₹.100<div>3 - 5 Working days- Standard Delivery</div></div>
-        <div id="c2div5">Order Total (incl. GST):----------------------</div>
+        <div id="c2div4">Shipping Charges:--------------------------₹.100<div>3 - 5 Working days- Standard Delivery</div></div>
+        <div id="c2div5">Order Total (incl. GST):--------------------</div>
         <div id="c2div6"></div>
     </div>
     <div id="imgDisp">
@@ -79,7 +79,7 @@
     dispTotal();
 
     function dispTotal(){
-        var total=0
+        var total=945
         // var total=cart.reduce(function(a,c){
         //     return a+Number(c.price);
         // },0);
@@ -151,7 +151,7 @@
             
             var btn=document.createElement("button");
             btn.setAttribute("id", "button");
-            btn.textContent="pay";
+            btn.textContent="Pay";
             btn.addEventListener("click", function(){
                 cardVer();
             });
