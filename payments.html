@@ -44,11 +44,11 @@
         <div id="c2div1"><h3>Order Summery</h3></div>
         
         <div id="c2div2">Cart Subtotal:--------------------------------</div>
-        <div id="c2div3">100</div>
+        <div id="c2div3"></div>
         
         <div id="c2div4">Shipping Charges:----------------------------₹.100<div>3 - 5 Working days- Standard Delivery</div></div>
-        <div id="c2div5">Order Total (incl. GST):------------------------</div>
-        <div id="c2div6">50</div>
+        <div id="c2div5">Order Total (incl. GST):----------------------</div>
+        <div id="c2div6">55</div>
     </div>
     <div id="imgDisp">
             <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/secured.png" style="margin-left:500px;"/>
@@ -74,7 +74,24 @@
 <script>
     // total billing
 
-    var total=0;
+    // var cart=JSON.parse(localStorage.getItem("cartItem"))||[];
+    // dispTotal();
+
+    // function siapTotal(){
+    //     var total=0
+        // var total=cart.reduce(function(a,c){
+        //     return a+Number(c.price);
+        // },0);
+
+        var total=0;
+
+        document.querySelector("#c2div3").textContent="₹."+total;
+
+        var subTotal=0;
+        subTotal=100+total;
+
+        // document.querySelector("#c2div6").textContent="₹."+subTotal;
+    // }
 
 
 
