@@ -199,8 +199,17 @@
             document.querySelector("#cont1").innerHTML="";
             var h1=document.createElement("h1");
             h1.textContent="Thank You for Ordering from us.";
+            var h2=document.createElement("h2");
+            h2.textContent="Order id = 009865412";
 
-            document.querySelector("#cont1").append(h1);
+            var btn=document.createElement("button");
+            btn.textContent="CONTINUE SHOPPING";
+            btn.setAttribute("id", "continue");
+            btn.addEventListener("click",function(){
+                moveProd();
+            });
+
+            document.querySelector("#cont1").append(h1,h2,btn);
         }
     }
 
