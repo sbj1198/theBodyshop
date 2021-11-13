@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #main{
+            margin: auto;
+            border: 1px solid grey;
+            margin-top: 50px;
+            width: 500px;
+            padding: 10px;
+        }
+       #search,#searchbutton{
+           display: inline-block;
+           border: 1px solid grey;
+       }
+       #searchbar{
+           border: 1px grey;
+           width: 280px;
+       }
+      
+    </style>
+</head>
+<body> 
+    <div id="main">
+        <form>
+            <label>Search by:</label>
+            <input class="boxes" id="trackid"type="checkbox">
+            <label>Tracking ID/AWB</label>
+            <input class="boxes"id="orderid" type="checkbox">
+            <label>Order Id</label>
+        </form>
+        <br>
+        <div id="searchbar">
+            <div id="search"><input type="search" placeholder="Enter Your Tracking ID/AWB"></div>
+            <div id="searchbutton">
+                <a  href="#"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+        <br>
+        <p style="font-weight: bold;">Check current status of your shipment</p>
+    </div>
+    
+    
+</body>
+</html>
+<script>
+    document.querySelector("#searchbutton").addEventListener("click",msg);
+    function msg(){
+        var value=document.querySelector("#search").value;
+        console.log(value);
+        if(value=="123456"){
+            alert("Your order is not yet shipped.")
+        }else{
+            alert("The order/shipment you're trying to track has not been shipped yet or the order number entered is incorrect.")
+        }
+    }
+</script>
