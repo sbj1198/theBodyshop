@@ -36,6 +36,7 @@
               <label for="cod">Cash On Delivery</label><br>
             <div id="codDisp"></div>
             <br>
+            <br>
             
         </div>
         
@@ -48,7 +49,7 @@
         
         <div id="c2div4">Shipping Charges:----------------------------₹.100<div>3 - 5 Working days- Standard Delivery</div></div>
         <div id="c2div5">Order Total (incl. GST):----------------------</div>
-        <div id="c2div6">55</div>
+        <div id="c2div6"></div>
     </div>
     <div id="imgDisp">
             <img src="https://staticbodyshop.gumlet.io/pub/media/wysiwyg/checkout/secured.png" style="margin-left:500px;"/>
@@ -75,27 +76,23 @@
     // total billing
 
     // var cart=JSON.parse(localStorage.getItem("cartItem"))||[];
-    // dispTotal();
+    dispTotal();
 
-    // function siapTotal(){
-    //     var total=0
+    function dispTotal(){
+        var total=0
         // var total=cart.reduce(function(a,c){
         //     return a+Number(c.price);
         // },0);
 
-        var total=0;
+        
 
         document.querySelector("#c2div3").textContent="₹."+total;
 
         var subTotal=0;
         subTotal=100+total;
 
-        // document.querySelector("#c2div6").textContent="₹."+subTotal;
-    // }
-
-
-
-
+        document.querySelector("#c2div6").textContent="₹."+subTotal;
+    }
 
 
     // back to shop
