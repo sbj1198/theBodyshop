@@ -1,0 +1,326 @@
+/* MAIN TOP IMAGE STYLING */
+
+.bx {
+    box-sizing: content-box;
+    width: 90%;
+  }
+  .parent {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+  }
+  .parent img {
+    /* vertical-align: middle; */
+  
+    height: 370px;
+  }
+  .parent .text {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    color: #ffffff;
+    width: 100%;
+    padding: 20px;
+  }
+  #ayus {
+    top: 59%;
+    padding: 5px;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    border-bottom: 50px;
+  }
+  #mntxt {
+    font-weight: 8000;
+    font-weight: bold;
+  }
+  #txt {
+    font-weight: bold;
+  }
+  
+  /* NAV BAR STYLING */
+  * {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    color: beige;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+  .sidebar {
+    margin-left: 5%;
+    width: 15%;
+    height: 100%;
+    left: 0;
+    margin-top: 5%;
+  }
+  .sidebar {
+    color: black;
+    /* font-size: 25px; */
+    font-weight: 600;
+    /* line-height: 90px; */
+    text-align: center;
+    background: lightgrey;
+    letter-spacing: 1px;
+  
+    text-align: left;
+  }
+  #filter {
+    height: 10%;
+    font-size: 18px;
+    /* margin-bottom: 18%; */
+    color: black;
+    margin-left: 13%;
+  }
+  
+  nav ul {
+    background: white;
+    height: 60%;
+    width: 100%;
+    list-style: none;
+  }
+  nav ul li {
+    line-height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  nav ul li a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    /* padding-left: 40px; */
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+  }
+  #ftbt {
+    font-weight: bold;
+    background: #f7f7f7;
+    margin-right: 14%;
+    font-size: 14px;
+  }
+  
+  #catg {
+    color: black;
+  }
+  nav ul .lisz li a {
+    font-size: 14px;
+  }
+  nav ul .lisz li {
+    font-size: 14px;
+  }
+  /* nav ul li a {
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+  } */
+  nav ul .feat-show1.show {
+    display: block;
+  }
+  nav ul .feat-show2.show2 {
+    display: block;
+  }
+  nav ul .feat-show3.show3 {
+    display: block;
+  }
+  nav ul .feat-show4.show4 {
+    display: block;
+  }
+  nav ul .feat-show5.show5 {
+    display: block;
+  }
+  
+  nav ul .serv-show.show1 {
+    display: block;
+  }
+  
+  /* 20 pe jo ul hai uski styling ab  */
+  nav ul ul {
+    position: static;
+    display: none;
+  }
+  nav ul ul li {
+    line-height: 42px;
+    border-bottom: none;
+  }
+  nav ul ul li a {
+    font-size: 17px;
+    color: black;
+    padding-left: 80px;
+  }
+  nav ul li a span {
+    /* background-color: black; */
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    /* font-size: 25px; */
+    transition: tranform 0.4s;
+    box-sizing: none;
+  
+    margin-bottom: 5%;
+  }
+  #arr {
+    color: #111;
+    margin-left: 30%;
+  }
+  
+  /* nav ul  li a:hover span{
+     transform: translateY(-50%) rotate(-180deg);
+  } */
+  nav ul li a span.rotate {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+  
+  #obj {
+    height: 440px;
+    overflow: scroll;
+  }
+  #obj1 {
+    height: 150px;
+  }
+  
+  .optvl {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+  }
+  
+  /* STYLING OF CATEGORY DIV */
+  
+  #sortdiv {
+    margin-top: 2%;
+    margin-bottom: 20px;
+    background-color: black;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 58%;
+    left: 25%;
+    color: black;
+    background-color: white;
+    width: 70%;
+    height: 10%;
+    margin-bottom: 4%;
+    /* margin-bottom:700px ; */
+  }
+  #sort {
+    position: absolute;
+    top: 4%;
+    /* left: 1080%; */
+    background-color: #e1e1e1;
+    color: black;
+    margin-left: 80%;
+    width: 15%;
+    height: 40%;
+    font-weight: bold;
+  }
+  
+  #srtlf {
+    font-size: 16px;
+  }
+  
+  #mine {
+    position: absolute;
+    text-align: right;
+    margin-left: 74%;
+    top: 15%;
+    font-size: 16px;
+  }
+  
+  /* STYLING OF GRID  PART  */
+  
+  #grid {
+    position: absolute;
+    top: 52%;
+    right: 5%;
+    display: grid;
+    /* border: 1px solid black; */
+    width: 70%;
+    height: 100%;
+    gap: 15px;
+    grid-template-columns: auto auto auto;
+    margin-left: 60%;
+    user-select: auto;
+    margin-top: 11%;
+  }
+  .it {
+    height: 80%;
+    width: 70%;
+  }
+  
+  .grid-img {
+    /* border: 1px solid black; */
+    width: 120%;
+    height: 70%;
+    margin-right: 5%;
+  }
+  
+  /* ALL THE STYLING OF OBJ MAPPING */
+  
+  button {
+    background: 0 0;
+    border: 2px solid #111;
+    border-radius: 0;
+    box-shadow: none;
+    font-family: "Interstate Condensed" !important;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 15px;
+    height: 38px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 5%;
+    color: black;
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  h5 {
+    color: #1b1b1b;
+    margin-bottom: 8%;
+  }
+  .price {
+    color: black;
+    margin-left: 38%;
+    margin-bottom: 4%;
+    font-weight: bold;
+  }
+  
+  .vr {
+    color: lightgray;
+    margin-left: 30%;
+  }
+  #heart {
+    color: black;
+  }
+  
+  .circle {
+    background-color: red;
+    border: 2px solid red;
+    height: 80px;
+    width: 79px;
+    border-radius: 58%;
+  }
+  #crpr {
+    margin-top: 16px;
+    margin-left: 5px;
+    font-size: 14px;
+    text-align: center;
+    text-align: justify;
+  }
+  #ancr {
+    cursor: pointer;
+  }
+  #heart1 {
+    color: black;
+  }
+  
