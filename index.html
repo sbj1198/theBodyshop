@@ -10,6 +10,7 @@
     <title>Cruelty-Free & Beauty Products| The Body Shop</title>
     <link rel="shortcut icon" href="img\favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/64d8096832.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -368,8 +369,9 @@
                             <input id="sinp" type="email" placeholder="SIGN UP FOR OUR EXCLUSIVE OFFERS">
                             <div id="inftxt"></div>
                         </div>
-                        <div style="width:8%; text-align:center;line-height:50px;">
-                            <i class="fas fa-chevron-right"></i>
+                        <div id="p1"style="width:8%;">
+                            >
+                            <!-- <i class="fas fa-chevron-right"></i> -->
                         </div>
                     </div>
                 </div>
@@ -515,7 +517,7 @@
 
     // footer script
 
-    document.querySelector("i").addEventListener("click", inpCheck);
+    document.querySelector("#p1").addEventListener("click", inpCheck);
 
     // email checker function
     function inpCheck() {
