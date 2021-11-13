@@ -17,7 +17,7 @@ function accountCheck() {
                                                       if not than taking him to registration page */
             for (var i = 0; i < acc.length; i++) {
                 if (x == acc[i].mobileNo) {
-                    console.log("some code will go here");
+                   window.location.href = "index.html";
                 }
                 else {
                     acc.push(mobObj);
@@ -38,7 +38,7 @@ function accountCheck() {
         if (acc.length !== 0) {
             for (var i = 0; i < acc.length; i++) {
                 if (x == acc[i].email) {
-                    console.log("some code will go here");
+                   window.location.href = "index.html";
                 }
                 else {
                     acc.push(emailObj);
