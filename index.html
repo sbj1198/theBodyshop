@@ -42,8 +42,8 @@
                     <a title="Stores" href="#">Stores</a>
                     <img src="img\loyality-card.png" alt="loyality password" />
                     <a title="Stores" href="#"> Love Your Body™ Club</a>
-                    <img src="img\truck1.jpg" alt="truck img">
-                    <a title="Stores" href="#"> Track Order</a>
+                    <img id="track"src="img\truck1.jpg" alt="truck img">
+                    <a title="Stores" href="#" id="track"> Track Order</a>
                 </div>
                 <!-- mid header start -->
                 <div class="mid-header">
@@ -487,7 +487,10 @@
 <script src="index.js"></script>
 <!-- ======= -->
 <script>
-
+document.querySelector(#track).addEventListener("click",trackpage);
+function trackpage(){
+    window.location.href="track.html";
+}
     var slideIndex = 1;
     showSlides(slideIndex);
 
