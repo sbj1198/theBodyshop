@@ -15,7 +15,7 @@ function accountCheck() {
                                                       if not than taking him to registration page */
             for (var i = 0; i < acc.length; i++) {
                 if (x == acc[i].mobileNo) {
-                    console.log("some code will go here");
+                    window.location.href = "index.html";
                 }
                 else {
                     acc.push(mobObj);
@@ -36,7 +36,7 @@ function accountCheck() {
         if (acc.length !== 0) {
             for (var i = 0; i < acc.length; i++) {
                 if (x == acc[i].email) {
-                    console.log("some code will go here");
+                    window.location.href = "index.html";
                 }
                 else {
                     acc.push(emailObj);
@@ -55,19 +55,3 @@ function accountCheck() {
     localStorage.setItem("accDetails", JSON.stringify(acc));
 }
 
-// function validateMobile(x) {
-//     var pattern = /^[6-9]\d{9}$/;
-//     if (pattern.test(x)) {
-//         return true;
-//     }
-//     alert("You have entered an incorrect Mobile No!");
-//     return false;
-// }
-// function validateEmail(x) {
-//     var pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//     if (pattern.test(x)) {
-//         return true;
-//     }
-//     alert("You have entered an incorrect email!");
-//     return false;
-// }
