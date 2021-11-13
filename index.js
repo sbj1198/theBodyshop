@@ -1,3 +1,9 @@
+
+document.querySelector(".giftpage").addEventListener("click",function(){
+    window.location.href="gift.html"
+})
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
