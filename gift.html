@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gift.css">
+    <script src="https://kit.fontawesome.com/8638c77061.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    
+</head>
+
+<body>
+
+
+    <!-- FIRST IMAGE  -->
+
+    <div id="bx" class="parent">
+        <img src="https://staticbodyshop.gumlet.io/pub/media/catalog/category/en-global-category-gifting-gift-wrap.jpg" style="width:100%;">
+        <div id ="ayus" class="text">
+          
+          
+          <h1 id="mntxt" >GIFTS RS1000 & UNDER</h1>
+          <p id="txt">Small packages are the ones that box some of the best joys. It’s affordable, smells amazing and is wrapped with love, all ready to go. So, 
+         be it any occasion, choose from our popular picks of gifts under Rs. 1,000 that is sure to lift someone’s mood and senses. Need any more reason to get these for the next occasion? We think not!</p> 
+  
+  
+  
+        </div>
+      </div>
+     
+      
+      <!-- NAVIGATION SIDE BAR -->
+
+    <nav class="sidebar">
+        <div id="filter" >Filter by</div>
+        <ul>
+            <li >
+               
+                <a href="#" id ="ftbt" class ="feat-btn1 ">CATEGORY
+                    <span  class="first arr" ><i id="arr" class="fas fa-sort-down"></i></i></span>
+                </a> 
+                <ul id="obj" class="feat-show1">
+                   
+                </ul>
+            </li>
+
+           
+            <li>
+             
+                <a href="#" id ="ftbt" class ="feat-btn2 ">CATEGORY TYPE
+                    <span class="second" ><i id="arr"  class="fas fa-sort-down"></i></span>
+                </a> 
+                <ul id="ctype" class="feat-show2 lisz">
+                    <li><a href="#">Body care (1)</a> </li> 
+                    <li><a href="#">Gift (3)</a> </li> 
+                </ul>
+            </li>
+           
+            <li>
+           
+                <a href="#" id ="ftbt"  class="feat-btn3 ">PRICE
+                    <span id="third" ><i id="arr"  class="fas fa-sort-down"></i></span>
+                </a> 
+                <ul id="obj1" class="feat-show3 lisz">
+                    <li><a href="#">  ₹300.00 - ₹399.99 (1)</a> </li> 
+                    <li><a href="#"> ₹600.00 - ₹699.99 (2)</a> </li>  
+                    <li><a href="#">  ₹700.00 and above (3)</a> </li>  
+                   </ul>
+            </li>
+
+            <li>
+         
+                    <a href="#" id ="ftbt"  class="feat-btn4 ">RANGE
+                        <span id="fourth" ><i id="arr"  class="fas fa-sort-down"></i></span>
+                    </a> 
+                    <ul  class="feat-show4 lisz">
+                        <li><a href="#">   Almond Milk & Honey (1)</a> </li> 
+                        <li><a href="#">Strawberry (1)</a> </li>  
+                     
+
+                    </ul>
+                </li>
+
+                <li>
+                 
+                        <a href="#" id ="ftbt"  class="feat-btn5 ">RECIPIENT
+                            <span id="five" ><i id="arr"  class="fas fa-sort-down"></i></span>
+                        </a> 
+                        <ul class="feat-show5 lisz">
+                            <li><a href="#">  For Him (4)</a> </li> 
+                            <li><a href="#">Men (3)</a> </li>  
+                            <li><a href="#">  For Her (4)</a> </li> 
+
+
+                        </ul>
+                    </li>
+
+
+
+
+           
+        </ul>
+    </nav>
+
+    <!-- SORTING PART -->
+    <div>
+        <div id="sortdiv" >
+            <h5 id="srtlf" >8 products</h5>
+             <h5 id="mine">Sort by:</h5>
+        
+            <select id="sort" id="sorter" onchange="PriceSort()"> sort by
+                <option class="optvl" value="color"> Color     </option>
+                <option  class="optvl" value="box_count" >Product Count for Gift Box</option>
+                <option  class="optvl" value="price_asc"> Price(lowest first) </option>
+                <option  class="optvl" value="price_desc">Price(highest first) </option>
+                <option class="optvl" value="newest">  Most Recent First  </option>
+                <option  class="optvl"value="oldest"> Most Recent Last</option>
+                <option class="optvl" value="name_az"> Alphabatical A - Z </option>
+                <option  class="optvl"  value="name_za">Alphabatical Z - A </option>
+                <option  class="optvl" value="created_at">New In</option>
+                <option  class="optvl" value="position"selected="selected">Best Sellers </option>
+        </select>
+        </div>
+
+        <!-- GRID PART -->
+        <div id="grid"> 
+  
+      
+            
+        </div>
+    </div>
+ 
+  
+   
+</div>  
+
+
+
+
+
+    <!-- now the script part -->
+    <script>
+          $('.feat-btn1').click(function(){
+              $('nav ul .feat-show1').toggleClass("show")
+              $('nav ul .first').toggleClass("rotate")
+          });
+
+          $('.feat-btn2').click(function(){
+              $('nav ul .feat-show2').toggleClass("show2")
+              $('nav ul .second').toggleClass("rotate")
+          });
+
+          $('.feat-btn3').click(function(){
+              $('nav ul .feat-show3').toggleClass("show3")
+              $('nav ul #third').toggleClass("rotate")
+          });
+
+          $('.feat-btn4').click(function(){
+              $('nav ul .feat-show4').toggleClass("show4")
+              $('nav ul #fourth').toggleClass("rotate")
+          });
+
+          $('.feat-btn5').click(function(){
+              $('nav ul .feat-show5').toggleClass("show5")
+              $('nav ul #five').toggleClass("rotate")
+          });
+               
+    
+ 
+    </script>
+</body>
+</html>
+
+
+
+
+
+                                   
+    <script>
+        data = [
+   {name : "Eye Care (6)"},
+   {name :"Exfoliators & Masks (24)"},
+   {name :"Lip Care (4)"},
+   {name :"Mens Shaving (3)"},
+   {name :"Night Care (5)"},
+   {name :"Sun Protection (5)"},
+   {name :"Washes & Make Up Removers (14)"},
+   {name :"Targeted Treatments (6)"},
+   {name :"Face Mist (1)"},
+   {name :"View All (96)"},
+   {name :"Men's Skincare (14)"},
+   {name :"Vegan Skin Care (4)"},
+   {name :"Trending (143)"},
+   {name :"Travel Sizes (29)"},
+   {name :"Holidays Essentials (12)"},
+   {name :"New (60)"},
+   {name :"Best Sellers (74)"},
+   {name :"Top Rated (52)"},
+   {name :"Vegan (97)"},
+   {name :"Body (128)"},
+   {name :"Bath & Body (91)"},
+   {name :"Recommended (1)"},
+   {name :"Accessories (6)"},
+           
+ ]
+
+    data.map(function(item){
+        var li = document.createElement("li")
+        li.textContent=item.name
+        var anc = document.createElement("a")
+
+        anc.setAttribute("href","#")
+        li.setAttribute("id","catg")
+        var spn = document.createElement("span")
+        spn.textContent=item.price 
+        anc.append(li)
+        
+        document.getElementById("obj").append(anc)
+    })
+
+    griddata=[
+        { imgurl:"https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1097807_mini_manicure_british_rose_ayr21_brnz_inecmps576.jpg",
+            prodname:"Hydrating British Rose Hands & Nails Kit",
+            price:645.00,
+
+    },
+    { imgurl:"https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1097753_g1_treat_milk_honey_ayr21_a0x_brnz_inecmps627.jpg",
+            prodname:"Soothing Almond Milk & Honey Duo",
+            price:745.00,
+
+    },
+    { imgurl:"https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1097752_g1_treat_fruity_ayr21_a0x_brnz_inecmps561.jpg",
+            prodname:"Juicy Strawberry Duo",
+            price:695.00,
+
+    },
+    { imgurl:"https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1094369_gc_pouch_superfood_mists_bg_rm20_a0x_brnz_1_inpstps236.jpeg",
+            prodname:"Create Your Own Gift Jute Bag",
+            price:395.00,
+
+    },
+    ]
+   
+    // <div id="it">
+    //             <div id="circle"><p id="crpr">20% Off  <br> on Any 3</p></div>
+    //             <a  href="https://www.thebodyshop.in/lemon-purifying-face-wash.html">
+    //                 <img class="grid-img" src="https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/1cd1953e8cb5724f5234dc821d9f1d62/1/0/1097807_mini_manicure_british_rose_ayr21_brnz_inecmps576.jpg" alt="">
+    //                 <h5>Hydrating British Rose Hands & Nails Kit</h5>
+    //                 <div id="vr" >  ★★★★★  </div>
+    //             </a>
+             
+    //             <div class="price-box"><span class="price">₹945.00</span></div>
+                
+                
+    //                 <button id="bt1"> ADD TO BAG </button>
+                  
+    //                 <i id="heart" class="far fa-heart "></i>
+     
+
+    var cart =JSON.parse(localStorage.getItem("cartbag")) ||  []
+    
+
+   function addtocart(item){
+       cart.push(item)
+       localStorage.setItem("cartbag",JSON.stringify(cart))
+       console.log(cart)
+   }
+
+
+   function PriceSort(){
+       var selected = document.getElementById("sort").value
+    //    "price_asc"
+    //    "price_desc"
+      if(selected== "price_asc"){
+          griddata=griddata.sort(function(a,b){
+              return a.price-b.price
+          })
+      }
+      if(selected== "price_desc"){
+          griddata=griddata.sort(function(a,b){
+              return b.price-a.price
+          })
+      }
+      console.log(griddata)
+      Display(griddata)
+   }
+  
+   Display(griddata)
+
+  function Display(griddata){
+      document.querySelector("#grid").innerHTML="";
+    griddata.map(function(item){
+          
+        var itemDiv=document.createElement("div")
+        itemDiv.setAttribute("class","it")
+
+        var circDiv= document.createElement("div")
+        circDiv.setAttribute("class","circle")
+        circDiv.innerHTML=`<p id="crpr">20% off <br> on Any 3</p>`
+
+        var ancr=document.createElement("a")
+        ancr.setAttribute("id","ancr")
+       
+        var img= document.createElement("img")
+        img.setAttribute("src",item.imgurl)
+        img.setAttribute("class","grid-img")
+
+        var h5 = document.createElement("h5")
+        h5.textContent=item.prodname
+
+        var rate =document.createElement("div")
+        rate.setAttribute("class","vr")
+        rate.textContent="★★★★★"
+
+        ancr.append(img,h5,rate)
+     
+
+
+        var price = document.createElement("div")
+        price.setAttribute("class","price")
+        price.textContent= "₹"+item.price
+
+        var btn = document.createElement("button")
+        btn.textContent="ADD TO BAG"
+       
+       btn.addEventListener("click" ,function(){
+           addtocart(item)
+           console.log("here")
+       })
+       
+      
+
+        var i = document.createElement("span")
+        i.setAttribute("id","spn")
+        i.innerHTML=` <i id="heart" class="far fa-heart  fa-lg "></i>`
+       
+
+        itemDiv.append(circDiv,ancr,price,btn,i)
+        document.getElementById("grid").append(itemDiv)
+
+       i.onmouseenter= Mouseenter
+       i.onmouseleave=Mouseleave
+
+       function Mouseenter(){
+      
+        i.innerHTML=`  <i id="heart1" class="fas fa-heart  fa-lg"></i> "></i>`
+       }
+       function Mouseleave(){
+        i.innerHTML=` <i id="heart" class="far fa-heart  fa-lg "></i>`
+       }
+       
+       
+   
+
+
+    })
+}
+     
+
+
+
+        
+
+
+  
+     
+     
+
+    </script>
+   
+   
+   
+
+
