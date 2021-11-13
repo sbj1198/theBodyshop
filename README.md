@@ -1,4 +1,4 @@
-# www.theBodyshop.in 
+# www.thebodyshop.in 
 
 Project : Clonning of https://www.thebodyshop.in/ website.
 Team Name: WEB MONKS
@@ -10,7 +10,7 @@ Team Members: 1: Aditya Prasad Pattnanaik fw13_451
               6: Sireesha Ravulapalli fw13_468
  
  Description: 
- Gift Menu is Active and completely working.
+ Gift Menu is Active and working.
  
 
 				 	
