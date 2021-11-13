@@ -1,8 +1,6 @@
-
-// document.querySelector(".giftpage").addEventListener("click",function(){
-//     window.location.href="gift.html"
-// })
-
+document.querySelector(".giftpage").addEventListener("click",function(){
+    window.location.href="gift.html"
+})
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -355,3 +353,14 @@ function frontMove() {
 
 }
 // <!-- Script for Slider Ends -->
+
+// GeoLoacation query code
+window.addEventListener("load",getlocation);
+    function getlocation(){
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+    }
+    function showPosition(position){
+        // x.innerHTMl="";
+    }

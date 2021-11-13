@@ -100,7 +100,7 @@
     document.querySelector("#li1").addEventListener("click",moveShop);
     
     function moveShop(){
-        window.location.href=(".html");
+        window.location.href=("index.html");
     }
 
 
@@ -128,7 +128,7 @@
             var card=document.createElement("input");
             card.setAttribute("type", "number");
             card.setAttribute("id", "card");
-            card.setAttribute("placeholder","Enter Card Number");
+            card.setAttribute("placeholder","Enter 16 Digit Card Number");
 
             var br1=document.createElement("br");
 
@@ -169,7 +169,7 @@
         var cvv=document.querySelector("#cvv").value;
         var date=document.querySelector("#date").value;
         date=date.split("-").map(Number);
-        if(card.length==16 && cvv=="123" && date[0]>2021){
+        if(card.length==16 && cvv=="123"){
             document.querySelector("#cardInp").innerHTML="";
             var oinp=document.createElement("input");
             oinp.setAttribute("placeholder","Enter OTP");
@@ -198,7 +198,7 @@
             document.querySelector("#cont1").innerHTML="";
             document.querySelector("#cont1").innerHTML="";
             var h1=document.createElement("h1");
-            h1.textContent="Thank You for Ordering from us";
+            h1.textContent="Thank You for Ordering from us.";
 
             document.querySelector("#cont1").append(h1);
         }
