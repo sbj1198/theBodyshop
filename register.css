@@ -37,6 +37,9 @@ header {
 div{
     display: block;
 }
+input:focus{
+    outline: none;
+}
 .text_uppercase{
     text-transform: uppercase;
 }
@@ -159,6 +162,7 @@ select{
     color: #111;
     letter-spacing: normal;
     word-spacing: normal;
+<<<<<<< Updated upstream
 }
 
 /* payment logo css */
@@ -195,4 +199,6 @@ select{
 }
 #email_address{
     color: black;
+=======
+>>>>>>> Stashed changes
 }
