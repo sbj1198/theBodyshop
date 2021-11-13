@@ -148,21 +148,28 @@ const back = document.querySelector('.back');
         var eleheart = document.createElement("img")
         eleheart.classList.add("clk")
         eleheart.src="img/body-shop-icons-thick_wishlist.svg"
+        eleheart.addEventListener("dblclick", function(){
+            console.log("dblclick")
+            removeWish(item)
+            eleheart.src="img/body-shop-icons-thick_wishlist.svg"
+
+        })
         eleheart.addEventListener("click", function(){
             addToWish(item);
-            console.log("hare")
             eleheart.src="https://staticbodyshop.gumlet.io/pub/static/version1636335624/frontend/Tenovia/bodyshop/en_US/images/icons/body-shop-icons_wishlist_filled.svg"
         })
         ele.appendChild(eleheart)
-
         owlclass.appendChild(ele)
         })
     }
+    function removeWish(item){
+        wishList.pop()
+        localStorage.setItem('wishList',JSON.stringify(wishList));
+    }
     var wishList=JSON.parse(localStorage.getItem("wishList")) ||[];
-    function addToWish(item) {
-        
-        console.log(wishList);
-        console.log("hello")
+    //Wish list adding function
+    
+    function addToWish(item) { 
         wishList.push(item)
         localStorage.setItem('wishList',JSON.stringify(wishList));
     }
@@ -316,6 +323,7 @@ function dsa2(newdata) {
     owlclass1.appendChild(ele)
     })
 }
+
 var viewBox=0;
 function view(item) {
     viewBox=item;

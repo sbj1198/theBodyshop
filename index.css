@@ -634,6 +634,7 @@ vertical-align:top;
   align-items: center;
   margin-left: 40%;
   cursor: pointer;
+  border: 3px black solid;
 }
 .view:hover{
   background-color:black;
