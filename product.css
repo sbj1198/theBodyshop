@@ -142,7 +142,7 @@ button>img{
     display: inline-block;
     position: relative;
     bottom:40px;
-    right:-150px;
+    left:-420px;
 }   
 .moreImg>img:hover{
     border: 3px solid black;

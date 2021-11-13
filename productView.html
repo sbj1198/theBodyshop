@@ -343,7 +343,7 @@
                     </div>
                 </div>
                 <div class="cartbtn">
-                    <button type="button">ADD TO BAG</button>
+                    <button id="goToCart" type="button">ADD TO BAG</button>
                     <img style="width:50px;"
                         src="https://staticbodyshop.gumlet.io/pub/static/version1635769438/frontend/Tenovia/bodyshop/en_US/images/icons/icon-wishlist.svg"
                         alt="">
@@ -426,5 +426,9 @@ document.querySelector("#img1").addEventListener("click",function(){
 document.querySelector("#img2").addEventListener("click",function(){
     document.querySelector("#largImg>img").setAttribute("src","https://staticbodyshop.gumlet.io/pub/media/catalog/product/cache/48a7f187895307a50824afe4b30d07f7/4/_/4_edited_1.jpg")
 })
+document.getElementById("goToCart").addEventListener("click",goCart);
+function goCart() {
+    window.location.href = "cart.html"
+}
     
 </script>   
