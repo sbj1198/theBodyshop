@@ -1,6 +1,9 @@
 # www.thebodyshop.in 
 
 Project : Clonning of https://www.thebodyshop.in/ website.
+
+This is onlline indian E-commerce website who deals in Health and Body care related produts.
+
 Team Name: WEB MONKS
 Team Members: 1: Aditya Prasad Pattnanaik fw13_451
               2: Bhaskar Jha fw13_256
