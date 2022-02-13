@@ -1,7 +1,7 @@
 Project : Clonning of https://www.thebodyshop.in/ website.
 
 
-![Build Status](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTsDj6jugdV1TlQfClpKfq7PoVAN2XhBQRkg&usqp=CAU)
+![Build Status](https://raw.githubusercontent.com/mujhusain/theBodyshop/531a1a1e9f26f9d9b98500d026469429023012bd/img/Screenshot%20(114).png)
 
 This is onlline indian E-commerce website who deals in Health and Body care related produts. we have cloned the Website frontend part With home page, product page, Cart page and Checkout page as well.  User can login and can add products to cart and can checkout. We are not storing any user information anywhere.
 
