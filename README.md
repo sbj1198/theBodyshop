@@ -1,5 +1,6 @@
 Project : Clonning of https://www.thebodyshop.in/ website.
 
+Deployed link - https://bodyshop-clone.netlify.app/
 
 ![Build Status](https://raw.githubusercontent.com/mujhusain/theBodyshop/531a1a1e9f26f9d9b98500d026469429023012bd/img/Screenshot%20(114).png)
 
